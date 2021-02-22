@@ -1,10 +1,16 @@
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import styles from './Navbar.module.css';
 
 const NavbarComps = () => {
   return (  
     <>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Link href="/"className={styles.logo}>
+          <a><Image src="/CB logo.png" alt="site logo" width={128} height={64} /></a>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
