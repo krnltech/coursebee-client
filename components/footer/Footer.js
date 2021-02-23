@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer className={styles.footer}>
           Powered by
-          <Image src="/CB logo.png" alt="Vercel Logo" width={158} height={64} className={styles.logo} />
+          <Image src="/logo/cb-logo.png" alt="Vercel Logo" width={158} height={64} className={styles.logo} />
       </footer>
     </>
   );

@@ -1,16 +1,17 @@
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
+import Banner from '../components/banner/Banner';
+import HeadComps from '../components/Head';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Coursebee | Home</title>
-        <link rel="icon" href="/coursebee.ico"/>
-      </Head>
+    <>
+      <HeadComps title="Coursebee | Home" iconSource = "/icon/coursebee.ico"/>
+      <Banner source="/images/cb-banner.png"/>
 
 
+
+      <div className={styles.container}>      
       {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -53,5 +54,6 @@ export default function Home() {
       </main> */}
 
     </div>
-  )
-}
+    </>
+  );
+};
