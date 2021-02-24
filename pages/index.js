@@ -2,13 +2,15 @@ import styles from '../styles/Home.module.css';
 
 import Banner from '../components/banner/Banner';
 import HeadComps from '../components/Head';
+import CarouselComps from '../components/carousel/Carousel';
 
 export default function Home() {
   return (
     <>
       <HeadComps title="Coursebee | Home" iconSource = "/icon/coursebee.ico"/>
       <Banner source="/images/cb-banner.png"/>
-
+      <h2 style={{ textAlign: 'center', paddingBottom: '20px' }}>Explore our catagories to find your perfect program</h2>
+      <CarouselComps />
 
 
       <div className={styles.container}>      
