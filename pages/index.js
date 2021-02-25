@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <HeadComps title="Coursebee | Home" iconSource = "/icon/coursebee.ico"/>
-      <Banner source="/images/cb-banner.png"/>
-      <h2 style={{ textAlign: 'center', paddingBottom: '20px' }}>Explore our catagories to find your perfect program</h2>
+        <Banner source="/images/cb-banner.png"/>
+        <h2 style={{ textAlign: 'center', paddingBottom: '20px' }}>Explore our catagories to find your perfect program</h2>
       <CarouselComps />
 
 

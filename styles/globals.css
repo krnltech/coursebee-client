@@ -14,3 +14,32 @@ a {
 * {
   box-sizing: border-box;
 }
+.banner{
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  transform: translate(-70%, -80%);
+  color: #fff;
+}
+.title {
+  color: #a02f51;
+  letter-spacing: 6px;
+  text-shadow: 1px 0px 2px #fffdfd;
+}
+.custom-btn{
+  display: inline-block;
+  border: 1px solid #d8d8d8 !important;
+  color: #fff !important;
+  background-color: #a02f51 !important;
+  padding: 10px 50px !important;
+  letter-spacing: 2px;
+  margin-top: 11px;
+  text-decoration: none;
+  transition: .5s !important;
+}
+.custom-btn:hover{
+  background: #d8d8d8 !important;
+  border: 1px solid #a02f51 !important;
+  color: #000000 !important;
+  transition: .5s;
+}
