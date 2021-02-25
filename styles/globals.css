@@ -14,6 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+.layer{
+  margin-bottom: 8em;
+}
 .banner{
   position: absolute;
   left: 30%;
@@ -36,10 +39,21 @@ a {
   margin-top: 11px;
   text-decoration: none;
   transition: .5s !important;
+  border-radius: 10px;
 }
 .custom-btn:hover{
   background: #d8d8d8 !important;
   border: 1px solid #a02f51 !important;
   color: #000000 !important;
   transition: .5s;
+}
+.section-title{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px !important;
+  }
 }

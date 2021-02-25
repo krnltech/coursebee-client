@@ -1,61 +1,130 @@
 import styles from '../styles/Home.module.css';
 
+import { Tabs,Tab,Card,Button } from 'react-bootstrap';
 import Banner from '../components/banner/Banner';
 import HeadComps from '../components/Head';
 import CarouselComps from '../components/carousel/Carousel';
+import SummaryCard from '../components/summary-card/SummaryCard';
 
 export default function Home() {
   return (
     <>
-      <HeadComps title="Coursebee | Home" iconSource = "/icon/coursebee.ico"/>
-        <Banner source="/images/cb-banner.png"/>
-        <h2 style={{ textAlign: 'center', paddingBottom: '20px' }}>Explore our catagories to find your perfect program</h2>
-      <CarouselComps />
+        <section className="layer">
+          <HeadComps title="Coursebee | Home" iconSource = "/icon/coursebee.ico"/>
+          <Banner source="/images/cb-banner.png"/>
+        </section>
+
+        <section className="layer">
+            <div className="container">
+                <h2 className="section-title">Best Selling Courses</h2>
+                <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+                    <Tab eventKey="home" title="Web Development">
+                        <div className="row pt-3">
+                            <Card style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src="/images/1.png" />
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Text>
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </Card.Text>
+                                    <Button variant="primary">Go somewhere</Button>
+                                </Card.Body>
+                            </Card>
+                            <Card style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src="/images/1.png" />
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Text>
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </Card.Text>
+                                    <Button variant="primary">Go somewhere</Button>
+                                </Card.Body>
+                            </Card>
+                            <Card style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src="/images/1.png" />
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Text>
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </Card.Text>
+                                    <Button variant="primary">Go somewhere</Button>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    </Tab>
+                    <Tab eventKey="profile" title="Graphics Design">
+                        <p> an unknown printer took a galley of type and scrambled it to make a
+                            type specimen book. It has survived not
+                        </p>
+                    </Tab>
+                    <Tab eventKey="contact" title="Business" >
+                        <p>Lorem Ipsum is simply dummy textthe 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                            type specimen book. It has survived not
+                        </p>
+                    </Tab>
+                </Tabs>
+            </div>
+        </section>
+
+        <section className="layer">
+          <h2 className="section-title">Explore our catagories to find your perfect program</h2>
+          <CarouselComps />
+        </section>
+
+        <section className="layer">
+          <h2 className="section-title">Don't waste your valuable time or money</h2>
+          <p style={{ textAlign: 'center', paddingBottom: '20px'}}>Only Coursebee has all the critical factors to deliver real results</p>
+          <SummaryCard />
+        </section>
 
 
-      <div className={styles.container}>      
-      {/* <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <div className={styles.container}>
+          {/* <main className={styles.main}>
+            <h1 className={styles.title}>
+              Welcome to <a href="https://nextjs.org">Next.js!</a>
+            </h1>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+            <p className={styles.description}>
+              Get started by editing{' '}
+              <code className={styles.code}>pages/index.js</code>
             </p>
-          </a>
-        </div>
-      </main> */}
 
-    </div>
+            <div className={styles.grid}>
+              <a href="https://nextjs.org/docs" className={styles.card}>
+                <h3>Documentation &rarr;</h3>
+                <p>Find in-depth information about Next.js features and API.</p>
+              </a>
+
+              <a href="https://nextjs.org/learn" className={styles.card}>
+                <h3>Learn &rarr;</h3>
+                <p>Learn about Next.js in an interactive course with quizzes!</p>
+              </a>
+
+              <a
+                href="https://github.com/vercel/next.js/tree/master/examples"
+                className={styles.card}
+              >
+                <h3>Examples &rarr;</h3>
+                <p>Discover and deploy boilerplate example Next.js projects.</p>
+              </a>
+
+              <a
+                href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                className={styles.card}
+              >
+                <h3>Deploy &rarr;</h3>
+                <p>
+                  Instantly deploy your Next.js site to a public URL with Vercel.
+                </p>
+              </a>
+            </div>
+          </main> */}
+        </div>
     </>
   );
 };

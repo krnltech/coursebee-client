@@ -1,4 +1,4 @@
-import { Card, CardDeck, Button } from "react-bootstrap";
+import { Card, CardDeck } from "react-bootstrap";
 import { useState } from "react";
 
 const CardComps = () => {
