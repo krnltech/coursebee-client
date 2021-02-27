@@ -5,6 +5,8 @@ import HeadComps from '../components/Head';
 import CarouselComps from '../components/carousel/Carousel';
 import SummaryCard from '../components/summary-card/SummaryCard';
 
+import {Container, Row, Col, Image} from 'react-bootstrap';
+
 export default function Home() {
   return (
     <>
@@ -17,6 +19,34 @@ export default function Home() {
       <p style={{ textAlign: 'center', paddingBottom: '20px'}}>Only Coursebee has all the critical factors to deliver real results</p>
       <SummaryCard />
 
+      <Container fluid style={{ marginTop: '70px' }}>
+        <Row>
+          <Col md={6}>
+              <Image src="/images/1.png" style={{ float: 'right' }}/>
+          </Col>
+          <Col md={6}>
+            <Col md={6}>
+              <h1>Project Based Learning</h1>
+              
+              <p>Shikhbe Shobai provides 100% project oriented training. It means you will do real time client's projects as your assignments. Mentors will make you involved in dealing with the real client's experience.</p>
+            </Col>
+          </Col>
+        </Row>
+      </Container>
+      <Container fluid style={{ marginTop: '30px' }}>
+        <Row>
+          <Col md={6}>
+            <Col md={6} style={{ float: 'right' }}>
+              <h1>Learn to Earn</h1>
+                         
+              <p>The goal of our training is to make you able to earn. Our students: work in online freelancing marketplaces such as Upwork, Fiverr etc, do remote jobs in international companies, do local jobs in good companies.</p>
+            </Col>
+          </Col>        
+          <Col md={6}>
+            <Image src="/images/1.png" />
+          </Col>
+        </Row>
+      </Container>
       <div className={styles.container}>      
       {/* <main className={styles.main}>
         <h1 className={styles.title}>
