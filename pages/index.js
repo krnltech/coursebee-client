@@ -5,6 +5,7 @@ import Banner from '../components/banner/Banner';
 import HeadComps from '../components/Head';
 // import CarouselComps from '../components/carousel/Carousel';
 import SummaryCard from '../components/summary-card/SummaryCard';
+import SuccessCard from '../components/success-stories/SuccessCard';
 
 import {Container, Row, Col, Image} from 'react-bootstrap';
 
@@ -100,7 +101,7 @@ export default function Home() {
         <Container fluid >
           <Row>
             <Col md={6}>
-                <Image src="/images/project.jpg" alt="" style={{ float: 'right', borderRadius: '20px', height: '500px' }}/>
+                <Image src="/images/project.jpg" alt="" style={{ float: 'right', borderRadius: '20px', height: '500px' }} fluid/>
             </Col>
             <Col md={6}>
               <Col md={6}>
@@ -123,7 +124,7 @@ export default function Home() {
               </Col>
             </Col>        
             <Col md={6}>
-              <Image src="/images/l-earn.jpg" alt="" style={{ borderRadius: '20px', height: '500px'}}/>
+              <Image src="/images/l-earn.jpg" alt="" style={{ borderRadius: '20px', height: '500px'}} fluid/>
             </Col> 
           </Row>
         </Container>
@@ -137,8 +138,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div className={styles.container}>
-      </div>
+      <section className="layer">
+        <SuccessCard />
+      </section>
     </>
   );
 };
