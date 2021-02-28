@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css';
 
 import { Tabs,Tab,Card,Button } from 'react-bootstrap';
 import Banner from '../components/banner/Banner';
+import SliderComponent from '../components/slider/slider';
 import HeadComps from '../components/Head';
 import CarouselComps from '../components/carousel/Carousel';
 import SummaryCard from '../components/summary-card/SummaryCard';
@@ -17,61 +18,30 @@ export default function Home() {
         <section className="layer">
             <div className="container">
                 <h2 className="section-title">Best Selling Courses</h2>
+
                 <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
                     <Tab eventKey="home" title="Web Development">
-                        <div className="row pt-3">
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/1.png" />
-                                <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
-                                    </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
-                                </Card.Body>
-                            </Card>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/1.png" />
-                                <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
-                                    </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
-                                </Card.Body>
-                            </Card>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/1.png" />
-                                <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
-                                    </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
-                                </Card.Body>
-                            </Card>
+                        <div className=" pt-3">
+                            <SliderComponent/>
                         </div>
                     </Tab>
                     <Tab eventKey="profile" title="Graphics Design">
-                        <p> an unknown printer took a galley of type and scrambled it to make a
-                            type specimen book. It has survived not
-                        </p>
+                        <div className=" pt-3">
+                            <SliderComponent/>
+                        </div>
                     </Tab>
                     <Tab eventKey="contact" title="Business" >
-                        <p>Lorem Ipsum is simply dummy textthe 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                            type specimen book. It has survived not
-                        </p>
+                        <div className=" pt-3">
+                            <SliderComponent/>
+                        </div>
                     </Tab>
                 </Tabs>
             </div>
         </section>
 
         <section className="layer">
-          <h2 className="section-title">Explore our catagories to find your perfect program</h2>
-          <CarouselComps />
+          {/*<h2 className="section-title">Explore our catagories to find your perfect program</h2>*/}
+          {/*<CarouselComps />*/}
         </section>
 
         <section className="layer">

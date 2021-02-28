@@ -51,6 +51,12 @@ a {
   text-align: center;
   margin-bottom: 60px;
 }
+.slider-card{
+  margin: 0 5px;
+}
+.slick-next:before, .slick-prev:before {
+  color: #fb0b0b !important;
+}
 
 @media (min-width: 1280px) {
   .container {
