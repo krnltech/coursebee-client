@@ -17,7 +17,7 @@ const SummaryCard = () => {
   const [summary, setSummary] = useState([
     {
       title: "Get real employable skills",
-      body: "Our quality curriculum is designed with top-tier industry partners, not academics, so you    learn the high-impact skills that top companies want.",
+      body: "Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.",
       src: <BsBagFill style={{ color: '#02b3e4', fontSize: '40px' }}/>,
       id: 1,
     },
@@ -32,7 +32,7 @@ const SummaryCard = () => {
       body: "Self-paced learning - whenever and wherever you want. Graduate while learning part-time for 10 hrs/week.",
       src: <AiOutlineClockCircle style={{ color: '#15c26b', fontSize: '40px' }}/>,
       id: 3,
-    },
+    }
     // {
     //   title: "The help you need, when you need it",
     //   body: "Reach out to our mentors 24/7 and have your coding questions answered quickly so you can keep learning.",
@@ -41,7 +41,7 @@ const SummaryCard = () => {
     // }
   ]);
 
-  return (  
+  return (
     <>
       <div className="container">
         <CardDeck style={{ textAlign: 'center' }}>
@@ -57,11 +57,11 @@ const SummaryCard = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-          ))};
+          ))}
         </CardDeck>      
       </div>
     </>
   );
 }
- 
+
 export default SummaryCard;

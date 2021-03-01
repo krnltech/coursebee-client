@@ -1,23 +1,24 @@
 import {Card, Image} from 'react-bootstrap';
 import React, {useState} from "react";
 import Slider from "react-slick";
-import { GiTeacher } from "react-icons/gi";
+import { AiFillStar } from "react-icons/ai";
+import { GoGraph } from "react-icons/go";
+import { FaChalkboardTeacher } from "react-icons/fa";
 
 const SliderComponent = ({ source }) => {
     const cardStyle = { maxWidth: "18.75rem", height: "20rem" };
     const [courses, setCourses] = useState([
         {
             title: "Intro to Programming",
-            instructor: "zahid Hossain",
             body: "lorem ipsum...",
             author: "mario",
             difficulty: "Beginner",
+            rating: 3,
             src: "/images/1.png",
             id: 1,
         },
         {
             title: "Machine Learning",
-            instructor: "zahid Hossain",
             body: "lorem ipsum...",
             author: "yoshi",
             difficulty: "Intermediate",
@@ -26,7 +27,6 @@ const SliderComponent = ({ source }) => {
         },
         {
             title: "Cloud Dev Ops Engineer",
-            instructor: "zahid Hossain",
             body: "lorem ipsum...",
             author: "mario",
             difficulty: "Advanced",
@@ -35,7 +35,6 @@ const SliderComponent = ({ source }) => {
         },
         {
             title: "Intro to Programming",
-            instructor: "zahid Hossain",
             body: "lorem ipsum...",
             author: "mario",
             difficulty: "Beginner",
@@ -44,7 +43,6 @@ const SliderComponent = ({ source }) => {
         },
         {
             title: "Machine Learning",
-            instructor: "zahid Hossain",
             body: "lorem ipsum...",
             author: "yoshi",
             difficulty: "Intermediate",
@@ -53,7 +51,6 @@ const SliderComponent = ({ source }) => {
         },
         {
             title: "Cloud Dev Ops Engineer",
-            instructor: "zahid Hossain",
             body: "lorem ipsum...",
             author: "mario",
             difficulty: "Advanced",
@@ -84,16 +81,21 @@ const SliderComponent = ({ source }) => {
                 {courses.map((course,key) => (
                     <div style={{ padding : '0 6px'}} key={key}>
                         <Card className="slider-card" style={cardStyle} key={course.id}>
-                            <Card.Img  src={course.src} style={{ height: "150px"}} />
+                            <Card.Img  src={course.src}/>
                             <Card.Body>
                                 <Card.Title> {course.title} </Card.Title>
                                 <Card.Text>
-                                    <p><GiTeacher style={{ color: '#000000', fontSize: '15px',marginRight : '5px' }}/>{course.instructor}</p>
-                                    <p>{course.difficulty}</p>
+                                    <span className="instructor"><FaChalkboardTeacher style={{ color: '#000000', fontSize: '15px',marginRight : '5px' }}/>{course.author}</span>
+                                    <span className="rating" style={{ color: '#000000', fontSize: '15px',marginRight : '5px' }}> <AiFillStar/> <AiFillStar/> <AiFillStar/> <span className="rating-number">(3)</span> </span>
+                                    <span className="difficulty"> <GoGraph style={{    color: "#04cbe0"}}/> {course.difficulty}</span>
 
                                     {/*<p><span style={{ fontWeight: 'bold' }}>Estimated Time: </span>{course.time} </p>*/}
                                 </Card.Text>
                             </Card.Body>
+                            <div id="overlay4">
+                                <h2 className="overlay-title">{course.title}</h2>
+                                <p className="fa fa-arrow-circle-right fa-4x img-icon"></p>
+                            </div>
                         </Card>
                     </div>
                 ))}
