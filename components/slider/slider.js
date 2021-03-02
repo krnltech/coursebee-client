@@ -22,6 +22,7 @@ const SliderComponent = ({ source }) => {
             body: "lorem ipsum...",
             author: "yoshi",
             difficulty: "Intermediate",
+            rating: 4,
             src: "/images/2.jpg",
             id: 2,
         },
@@ -30,14 +31,16 @@ const SliderComponent = ({ source }) => {
             body: "lorem ipsum...",
             author: "mario",
             difficulty: "Advanced",
+            rating: 5,
             src: "/images/3.jpg",
-            id: 3,
+            id: 2,
         },
         {
             title: "Intro to Programming",
             body: "lorem ipsum...",
             author: "mario",
             difficulty: "Beginner",
+            rating: 3,
             src: "/images/1.png",
             id: 1,
         },
@@ -46,6 +49,7 @@ const SliderComponent = ({ source }) => {
             body: "lorem ipsum...",
             author: "yoshi",
             difficulty: "Intermediate",
+            rating: 4,
             src: "/images/2.jpg",
             id: 2,
         },
@@ -54,10 +58,25 @@ const SliderComponent = ({ source }) => {
             body: "lorem ipsum...",
             author: "mario",
             difficulty: "Advanced",
+            rating: 3,
             src: "/images/3.jpg",
             id: 3,
-        },
+        }
     ]);
+
+    const renderRating = (ratingNumber) => {
+        const stars = [];
+        for ( var i = 0; i < ratingNumber; i++ ) {
+            stars.push(<AiFillStar/>)
+        }
+        return stars.map( (star,key) => {
+            return (
+                <>
+                    {star}
+                </>
+            )
+        })
+    }
 
     var settings = {
         dots: false,
@@ -75,6 +94,7 @@ const SliderComponent = ({ source }) => {
             }
         }]
     };
+
     return (
         <>
             <Slider {...settings}>
@@ -86,7 +106,7 @@ const SliderComponent = ({ source }) => {
                                 <Card.Title> {course.title} </Card.Title>
                                 <Card.Text>
                                     <span className="instructor"><FaChalkboardTeacher style={{ color: '#000000', fontSize: '15px',marginRight : '5px' }}/>{course.author}</span>
-                                    <span className="rating" style={{ color: '#000000', fontSize: '15px',marginRight : '5px' }}> <AiFillStar/> <AiFillStar/> <AiFillStar/> <span className="rating-number">(3)</span> </span>
+                                    <span className="rating" style={{ color: '#000000', fontSize: '15px',marginRight : '5px' }}> {renderRating( course.rating )} <span className="rating-number">({course.rating})</span> </span>
                                     <span className="difficulty"> <GoGraph style={{    color: "#04cbe0"}}/> {course.difficulty}</span>
 
                                     {/*<p><span style={{ fontWeight: 'bold' }}>Estimated Time: </span>{course.time} </p>*/}
