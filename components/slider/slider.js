@@ -6,7 +6,7 @@ import { GoGraph } from "react-icons/go";
 import { FaChalkboardTeacher } from "react-icons/fa";
 
 const SliderComponent = ({ source }) => {
-    const cardStyle = { maxWidth: "18.75rem", height: "20rem" };
+    const cardStyle = { height: "25rem" };
     const [courses, setCourses] = useState([
         {
             title: "Intro to Programming",
@@ -83,7 +83,7 @@ const SliderComponent = ({ source }) => {
         autoplay: false,
         infinite: true,
         speed: 1000,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [{
             breakpoint: 600,

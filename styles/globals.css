@@ -93,7 +93,7 @@ a {
   overflow: hidden;
 }
 .card-img{
-  height: 150px;
+  height: 50%;
   box-shadow: 1px 5px 5px #afaaaa;
 }
 .card-title{
@@ -144,6 +144,8 @@ a {
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1200px !important;
+    max-width: 1660px !important;
+    padding-right: 100px !important;
+    padding-left: 100px !important;
   }
 }
