@@ -5,7 +5,6 @@ const Footer = () => {
   return (  
     <>
       <footer className={styles.footer}>
-          Powered by
           <Image src="/logo/cb-logo.png" alt="Vercel Logo" width={158} height={64} className={styles.logo} />
       </footer>
     </>
