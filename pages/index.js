@@ -44,24 +44,19 @@ export default function Home() {
       </section>
 
       {/* Motivation  */}
-            {/* <section className={classNames(styles.layer, styles.motivation)}> */}
-
-      <section className={classNames(styles.layer, styles.motivation)}>
+      <section className={styles.layer}>
         <h2 className={styles.sectionTitle}>
           Don't waste your valuable time or money
         </h2>
-        <p>
+        <p className={styles.secondTitle}>
           Only Coursebee has all the critical factors to deliver real results
         </p>
         <SummaryCard />
       </section>
 
       {/* Project Based Learning  */}
-      <section
-        className={styles.layer}
-        style={{ backgroundColor: "#f7f7f7", padding: "30px" }}
-      >
-        <Container fluid>
+      <section className={classNames(styles.layer, styles.project)}>
+        <Container fluid style={{marginBottom: "100px"}}>
           <Row>
             <Col md={6}>
               <Image
@@ -71,15 +66,15 @@ export default function Home() {
                   float: "right",
                   borderRadius: "20px",
                   height: "500px",
+                  minWidth: "800px",
                 }}
                 fluid
               />
             </Col>
             <Col md={6}>
               <Col md={6}>
-                <h1 style={{ marginBottom: "40px" }}>Project Based Learning</h1>
-
-                <p style={{ marginBottom: "40px", fontSize: "20px" }}>
+                <h1>Project Based Learning</h1>
+                <p>
                   Coursebee provides 100% project oriented training. It means
                   you will do real time client's projects as your assignments.
                   Mentors will make you involved in dealing with the real
@@ -94,9 +89,9 @@ export default function Home() {
           <Row>
             <Col md={6}>
               <Col md={6} style={{ float: "right" }}>
-                <h1 style={{ marginBottom: "40px" }}>Learn to Earn</h1>
+                <h1>Learn to Earn</h1>
 
-                <p style={{ marginBottom: "40px", fontSize: "20px" }}>
+                <p>
                   The goal of our training is to make you able to earn. Our
                   students: work in online freelancing marketplaces such as
                   Upwork, Fiverr etc, do remote jobs in international companies,
@@ -109,7 +104,11 @@ export default function Home() {
               <Image
                 src="/images/l-earn.jpg"
                 alt=""
-                style={{ borderRadius: "20px", height: "500px" }}
+                style={{
+                  borderRadius: "20px",
+                  height: "500px",
+                  minWidth: "800px",
+                }}
                 fluid
               />
             </Col>
@@ -141,7 +140,7 @@ export default function Home() {
       {/* Success Stories   */}
       <section className={styles.layer}>
         <SuccessCard />
-      </section>      
+      </section>
     </>
   );
 }

@@ -5,8 +5,21 @@
   text-align: center;
   margin-bottom: 40px;
 }
-.motivation p{
-  text-align: "center";
-  padding-bottom: "20px";
-  color: red
+.secondTitle{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* project style */
+.project{
+  background-color: #f6fdfd;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.project p{
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.project h1{
+  margin-bottom: 40px;
 }
