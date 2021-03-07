@@ -5,19 +5,16 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 * {
   box-sizing: border-box;
 }
-.layer{
-  margin-bottom: 8em;
-}
-.banner{
+
+
+.banner {
   position: absolute;
   left: 30%;
   top: 40%;
@@ -29,7 +26,7 @@ a {
   letter-spacing: 6px;
   text-shadow: 1px 0px 2px #fffdfd;
 }
-.custom-btn{
+.custom-btn {
   display: inline-block;
   border: 1px solid #d8d8d8 !important;
   color: #fff !important;
@@ -38,49 +35,43 @@ a {
   letter-spacing: 2px;
   margin-top: 11px;
   text-decoration: none;
-  transition: .5s !important;
+  transition: 0.5s !important;
   border-radius: 10px;
 }
-.custom-btn:hover{
+.custom-btn:hover {
   background: #d8d8d8 !important;
   border: 2px solid #a02f51 !important;
   color: #000000 !important;
-  transition: .5s;
+  transition: 0.5s;
   text-decoration: none;
 }
-.section-title{
-  text-align: center;
-  margin-bottom: 60px;
-}
-.slider-card{
+
+.slider-card {
   margin: 0 5px;
 }
-.slick-next:before, .slick-prev:before {
+.slick-next:before,
+.slick-prev:before {
   color: #fb0b0b !important;
 }
 
 /* ==== tab === */
-.nav-item{
+.nav-item {
   position: relative;
 }
-.nav-tabs .nav-link.active{
+.nav-tabs .nav-link.active {
   background-color: #02b3e4 !important;
   color: #ffffff !important;
 }
-.nav-tabs .nav-link.active:after{
+.nav-tabs .nav-link.active:after {
   content: "";
   position: absolute;
   display: block;
   background-color: #02b3e4;
-  width: .83437rem;
-  height: .83437rem;
-  -webkit-transform: rotate(
-          45deg
-  );
+  width: 0.83437rem;
+  height: 0.83437rem;
+  -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
-  transform: rotate(
-          45deg
-  );
+  transform: rotate(45deg);
   top: 85%;
   right: 45%;
   z-index: -1;
@@ -88,7 +79,7 @@ a {
 /* ==== tab end === */
 
 /* ==== card ==== */
-.card{
+.card {
   position: relative;
   overflow: hidden;
 }
@@ -105,7 +96,7 @@ a {
   font-size: 16px !important;
   height: 40px;
 }
-.instructor{
+.instructor {
   display: block;
   color: #797979;
 }
@@ -174,6 +165,44 @@ a {
   }
 
 /* ==== card end ==== */
+
+/* === category css === */
+.category-image {
+  position: relative;
+  overflow: hidden;
+}
+.category-image img{
+  width: 100%;
+}
+.category-overlay{
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  background: rgb(0 0 0 / 64%);
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 10px #ffffff;
+  transition: 0.5s;
+}
+.category-overlay-content{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.category-overlay-content h5{
+  letter-spacing: 2px;
+}
+.category-box:hover .category-overlay{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+/* === category css end=== */
 
 @media (min-width: 1280px) {
   .container {
