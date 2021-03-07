@@ -83,11 +83,16 @@ a {
   position: relative;
   overflow: hidden;
 }
-.card-img{
+.card-image{
   height: 50%;
+  position: relative;
+  overflow: hidden;
   box-shadow: 1px 5px 5px #afaaaa;
 }
-.card-title {
+.card-image img{
+  height: 100%;
+}
+.card-title{
   font-size: 16px !important;
   height: 40px;
 }
@@ -95,41 +100,69 @@ a {
   display: block;
   color: #797979;
 }
-.rating {
+
+.difficulty{
   display: block;
-  color: #f7b500 !important;
+  text-align: right;
+  font-size: 15px;
 }
-.rating-number {
-  color: #000000 !important;
-}
-.difficulty {
-  display: block;
-}
-#overlay4 {
+#overlay {
   cursor: pointer;
   /*display: flex;*/
   /*align-items: center;*/
   /*justify-content: center;*/
   /*flex-direction: column;*/
-  background: #fffcfcd6;
-  width: 100%;
+  background: rgb(0 0 0 / 78%);
+  color: #fafafa;
+  width: 50%;
   height: 100%;
   position: absolute;
   top: auto;
   bottom: 0;
-  transform: translateX(-100%);
-  opacity: 0;
-  padding: 5px;
+  transform: translateX(100%);
+  opacity: 1;
+  padding: 15px;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
-.overlay-title {
-  font-size: 20px !important;
-  height: 40px;
+.overlay-content{
+  width: 100%;
+  color: #ddd;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.card:hover #overlay4 {
-  opacity: 1;
-  transform: translateX(0px);
+.lectures span{
+  font-size: 14px;
 }
+.rating{
+  display: block;
+}
+.ratingIcon {
+  color: #ede11a !important;
+  font-size: 15px;
+}
+.rating-number{
+  font-weight: 800;
+}
+.language {
+  display: block;
+}
+.cart-button{
+  padding: 5px 20px;
+  background: #1fe3ef;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+.card:hover #overlay {
+    opacity: 0;
+    transform: translateX(200%);
+  }
 
 /* ==== card end ==== */
 

@@ -10,16 +10,16 @@
   margin-bottom: 25px;
 }
 
-/* project style */
-.project{
-  background-color: #f6fdfd;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.innerBanner{
+  background-color: #2e3d49;
+  padding: 100px;
+  text-align: center
 }
-.project p{
-  margin-bottom: 40px;
-  font-size: 20px;
+.innerBanner h2{
+  color: aliceblue;
 }
-.project h1{
-  margin-bottom: 40px;
+.innerBanner p{
+  color: aliceblue;
+  font-size: 18px;
+  margin-bottom: 20px;
 }

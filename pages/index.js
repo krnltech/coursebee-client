@@ -54,82 +54,15 @@ export default function Home() {
         <SummaryCard />
       </section>
 
-      {/* Project Based Learning  */}
-      <section className={classNames(styles.layer, styles.project)}>
-        <Container fluid style={{marginBottom: "100px"}}>
-          <Row>
-            <Col md={6}>
-              <Image
-                src="/images/project.jpg"
-                alt=""
-                style={{
-                  float: "right",
-                  borderRadius: "20px",
-                  height: "500px",
-                  minWidth: "800px",
-                }}
-                fluid
-              />
-            </Col>
-            <Col md={6}>
-              <Col md={6}>
-                <h1>Project Based Learning</h1>
-                <p>
-                  Coursebee provides 100% project oriented training. It means
-                  you will do real time client's projects as your assignments.
-                  Mentors will make you involved in dealing with the real
-                  client's experience.
-                </p>
-                <Button variant="outline-info">View All Courses</Button>
-              </Col>
-            </Col>
-          </Row>
-        </Container>
-        <Container fluid style={{ marginTop: "30px" }}>
-          <Row>
-            <Col md={6}>
-              <Col md={6} style={{ float: "right" }}>
-                <h1>Learn to Earn</h1>
-
-                <p>
-                  The goal of our training is to make you able to earn. Our
-                  students: work in online freelancing marketplaces such as
-                  Upwork, Fiverr etc, do remote jobs in international companies,
-                  do local jobs in good companies.
-                </p>
-                <Button variant="outline-info">View All Courses</Button>
-              </Col>
-            </Col>
-            <Col md={6}>
-              <Image
-                src="/images/l-earn.jpg"
-                alt=""
-                style={{
-                  borderRadius: "20px",
-                  height: "500px",
-                  minWidth: "800px",
-                }}
-                fluid
-              />
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
       {/* Inner Banner  */}
       <section className={styles.layer}>
         <div
-          className="container fluid"
-          style={{
-            backgroundColor: "#2e3d49",
-            padding: "100px",
-            textAlign: "center",
-          }}
+          className={classNames("container fluid", styles.innerBanner)}        
         >
-          <h2 style={{ color: "white" }}>
+          <h2>
             Make the most of your online learning experience
           </h2>
-          <p style={{ color: "white", fontSize: "18px", marginBottom: "20px" }}>
+          <p>
             Our Online Learning Resource Center has tips, tricks and inspiring
             stories to help you learn while staying home.
           </p>
