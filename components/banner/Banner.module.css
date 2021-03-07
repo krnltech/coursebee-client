@@ -1,0 +1,36 @@
+.bannerTitle {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  transform: translate(-70%, -80%);
+  color: #fff;
+}
+.customBtn {
+  display: inline-block;
+  border: 1px solid #d8d8d8 !important;
+  color: #fff !important;
+  background-color: #a02f51 !important;
+  padding: 10px 50px !important;
+  letter-spacing: 2px;
+  margin-top: 11px;
+  text-decoration: none;
+  transition: 0.5s !important;
+  border-radius: 10px;
+}
+.customBtn:hover {
+  background: #d8d8d8 !important;
+  border: 2px solid #a02f51 !important;
+  color: #000000 !important;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.logo{
+  width: 300px;
+  margin-bottom: 10px
+}
+.banner{
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  width: 100%;  
+}
