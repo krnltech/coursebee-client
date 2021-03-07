@@ -1,6 +1,5 @@
 import styles from "./Banner.module.css";
 import classNames from "classnames";
-import { BsListNested } from "react-icons/bs";
 
 const Banner = ({ source }) => {
   return (
@@ -11,7 +10,7 @@ const Banner = ({ source }) => {
           backgroundImage: `url(${source})`,
         }}
       >
-      
+
         <div className={styles.bannerTitle}>
           <img src="/logo/cb-logo.png" alt="" className={styles.logo} />
           <h5 className="mb-4 pl-4">
