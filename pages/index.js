@@ -43,6 +43,15 @@ export default function Home() {
         </section>
 
         <section className="layer">
+            <div className="container">
+                <h2 className="section-title">Top Rated Courses</h2>
+                <div>
+                    <SliderComponent/>
+                </div>
+            </div>
+        </section>
+
+        <section className="layer">
           {/*<h2 className="section-title">Explore our catagories to find your perfect program</h2>*/}
           {/*<CarouselComps />*/}
         </section>

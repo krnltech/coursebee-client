@@ -133,7 +133,6 @@ const SliderComponent = ({ source }) => {
                                     <a href="#" className="cart-button mt-2 ">Add to Cart</a>
                                 </Card.Text>
                             </Card.Body>
-
                         </Card>
                     </div>
                 ))}
