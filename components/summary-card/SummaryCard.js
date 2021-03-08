@@ -14,7 +14,7 @@ const SummaryCard = () => {
       body: "Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.",
       src: <BsBagFill style={{ color: '#02b3e4', fontSize: '40px' }}/>,
       color: "3px solid #02b3e4",
-      shadow: "3px 5px #02b3e4",
+      shadow: "2px 5px #02b3e4",
       id: 1,
     },
     {
@@ -22,7 +22,7 @@ const SummaryCard = () => {
       body: "Learn by doing with real-world projects and other hands-on exercises that lead to real skills mastery.",
       src: <FaRegLightbulb style={{ color: '#ffae0c', fontSize: '40px' }}/>,
       color: "3px solid #ffae0c",
-      shadow: "3px 5px #ffae0c",
+      shadow: "2px 5px #ffae0c",
       id: 2,
     },
     {
@@ -30,7 +30,7 @@ const SummaryCard = () => {
       body: "Self-paced learning - whenever and wherever you want. Graduate while learning part-time for 10 hrs/week.",
       src: <AiOutlineClockCircle style={{ color: '#15c26b', fontSize: '40px' }}/>,
       color: "3px solid #15c26b",
-      shadow: "3px 5px #15c26b",
+      shadow: "2px 5px #15c26b",
       id: 3,
     }
   ]);

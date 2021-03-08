@@ -2,11 +2,18 @@
   color: #ede11a !important;
   font-size: 15px;
 }
+
 .sliderCard {
   position: relative;
   overflow: hidden;
   margin: 0 5px;
 }
+.cardTitle{
+  font-size: 16px !important;
+  height: 40px;
+}
+
+
 .lectures span{
   font-size: 14px;
 }
@@ -38,7 +45,6 @@
 .cardImage img{
   height: 100%;
 }
-
 .overlayContent{
   width: 100%;
   color: #ddd;

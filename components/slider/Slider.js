@@ -142,7 +142,7 @@ const SliderComponent = ({ source }) => {
                   {" "}
                   <GoGraph style={{ color: "#04cbe0" }} /> {course.difficulty}
                 </span>
-                <Card.Title> {course.title} </Card.Title>
+                <Card.Title className={styles.cardTitle}> {course.title} </Card.Title>
                 <Card.Text>
                   <span className={styles.instructor}>
                     <FaChalkboardTeacher
