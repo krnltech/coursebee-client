@@ -1,6 +1,8 @@
 import { Card } from "react-bootstrap";
 import { useState } from "react";
 import Slider from "react-slick";
+import styles from "./Slider.module.css";
+import classNames from "classnames";
 
 import { AiFillStar } from "react-icons/ai";
 import { GoGraph } from "react-icons/go";
@@ -81,14 +83,14 @@ const SliderComponent = ({ source }) => {
   const renderRating = (ratingNumber) => {
     const stars = [];
     for (var i = 0; i < ratingNumber; i++) {
-      stars.push(<AiFillStar className="ratingIcon" />);
+      stars.push(<AiFillStar className={styles.ratingIcon} />);
     }
     return stars.map((star, key) => {
       return <>{star}</>;
     });
   };
 
-  var settings = {
+  let settings = {
     dots: false,
     autoplay: false,
     infinite: true,
@@ -111,23 +113,24 @@ const SliderComponent = ({ source }) => {
     <>
       <Slider {...settings}>
         {courses.map((course, key) => (
+            
           <div style={{ padding: "0 6px" }} key={key}>
-            <Card className="slider-card" style={cardStyle} key={course.id}>
-              <div className="card-image">
+            <Card className={styles.sliderCard} style={cardStyle} key={course.id}>
+              <div className={styles.cardImage}>
                 <Card.Img src={course.src} />
                 <div id="overlay">
-                  <div className="overlay-content">
-                    <span className="lectures">
+                  <div className={styles.overlayContent}>
+                    <span className={styles.lectures}>
                       {" "}
                       <ImBooks className="mr-2" />{" "}
                       <span> {course.lectures} </span>
                     </span>
-                    <span className="rating mt-2">
+                    <span className={classNames(styles.rating, "mt-2")}>
                       {" "}
                       {renderRating(course.rating)}{" "}
-                      <span className="rating-number">({course.rating})</span>{" "}
+                      <span className={styles.ratingNumber}>({course.rating})</span>{" "}
                     </span>
-                    <span className="language mt-2">
+                    <span className={classNames(styles.language, "mt-2")}>
                       {" "}
                       <FaGlobeAmericas className="mr-2" /> <span>বাংলা </span>{" "}
                     </span>
@@ -135,13 +138,13 @@ const SliderComponent = ({ source }) => {
                 </div>
               </div>
               <Card.Body>
-                <span className="difficulty">
+                <span className={styles.difficulty}>
                   {" "}
                   <GoGraph style={{ color: "#04cbe0" }} /> {course.difficulty}
                 </span>
                 <Card.Title> {course.title} </Card.Title>
                 <Card.Text>
-                  <span className="instructor">
+                  <span className={styles.instructor}>
                     <FaChalkboardTeacher
                       style={{
                         color: "#000000",
@@ -152,7 +155,7 @@ const SliderComponent = ({ source }) => {
                     {course.author}
                   </span>
                   <h5 className="mt-2 mb-3"> {course.price} TK.</h5>
-                  <a href="#" className="cart-button mt-2 ">
+                  <a href="#" className={classNames(styles.cartButton, "mt-2")}>
                     Add to Cart
                   </a>
                 </Card.Text>

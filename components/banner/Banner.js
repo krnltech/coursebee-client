@@ -7,10 +7,10 @@ const Banner = ({ source }) => {
       <div
         className={styles.banner}
         style={{
-          backgroundImage: `url(${source})`,
+          backgroundImage: `url(${source})`,              
         }}
       >
-
+      
         <div className={styles.bannerTitle}>
           <img src="/logo/cb-logo.png" alt="" className={styles.logo} />
           <h5 className="mb-4 pl-4">

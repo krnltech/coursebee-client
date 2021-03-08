@@ -21,10 +21,6 @@ a {
   text-shadow: 1px 0px 2px #fffdfd;
 }
 
-
-.slider-card {
-  margin: 0 5px;
-}
 .slick-next:before,
 .slick-prev:before {
   color: #fb0b0b !important;
@@ -59,35 +55,20 @@ a {
   position: relative;
   overflow: hidden;
 }
-.card-image{
-  height: 50%;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 1px 5px 5px #afaaaa;
-}
-.card-image img{
-  height: 100%;
-}
+
 .card-title{
   font-size: 16px !important;
   height: 40px;
 }
-.instructor {
-  display: block;
-  color: #797979;
+
+
+.card:hover #overlay {
+  opacity: 0;
+  transform: translateX(200%);
 }
 
-.difficulty{
-  display: block;
-  text-align: right;
-  font-size: 15px;
-}
 #overlay {
   cursor: pointer;
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/
-  /*flex-direction: column;*/
   background: rgb(0 0 0 / 78%);
   color: #fafafa;
   width: 50%;
@@ -100,47 +81,53 @@ a {
   padding: 15px;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
-.overlay-content{
-  width: 100%;
-  color: #ddd;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.lectures span{
-  font-size: 14px;
-}
-.rating{
-  display: block;
-}
-.ratingIcon {
-  color: #ede11a !important;
-  font-size: 15px;
-}
-.rating-number{
-  font-weight: 800;
-}
-.language {
-  display: block;
-}
-.cart-button{
-  padding: 5px 20px;
-  background: #1fe3ef;
-  color: #ffffff;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 5px;
-  border: 1px solid #cccccc;
-}
 
-.card:hover #overlay {
-  opacity: 0;
-  transform: translateX(200%);
-}
+
+
+
+
+
+
 
 /* ==== card end ==== */
+
+/* === category css === */
+.category-image {
+  position: relative;
+  overflow: hidden;
+}
+.category-image img{
+  width: 100%;
+}
+.category-overlay{
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  background: rgb(0 0 0 / 64%);
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 10px #ffffff;
+  transition: 0.5s;
+}
+.category-overlay-content{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.category-overlay-content h5{
+  letter-spacing: 2px;
+}
+.category-box:hover .category-overlay{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+/* === category css end=== */
 
 @media (min-width: 1280px) {
   .container {
