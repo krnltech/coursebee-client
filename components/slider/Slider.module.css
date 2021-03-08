@@ -3,6 +3,8 @@
   font-size: 15px;
 }
 .sliderCard {
+  position: relative;
+  overflow: hidden;
   margin: 0 5px;
 }
 .lectures span{
@@ -52,9 +54,10 @@
   padding: 5px 20px;
   background: #1fe3ef;
   color: #ffffff;
-  font-weight: 700;
-  
+  font-weight: 700;  
   border-radius: 5px;
   border: 1px solid #cccccc;
-
+}
+.cartButton:hover{
+  text-decoration: none;
 }

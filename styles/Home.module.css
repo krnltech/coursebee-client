@@ -1,24 +1,21 @@
 .layer {
   margin-bottom: 8em;
 }
-.sectionTitle {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.secondTitle{
+
+.secondTitle {
   text-align: center;
   margin-bottom: 25px;
 }
 
-.innerBanner{
+.innerBanner {
   background-color: #2e3d49;
   padding: 100px;
-  text-align: center
+  text-align: center;
 }
-.innerBanner h2{
+.innerBanner h2 {
   color: aliceblue;
 }
-.innerBanner p{
+.innerBanner p {
   color: aliceblue;
   font-size: 18px;
   margin-bottom: 20px;

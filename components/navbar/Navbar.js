@@ -33,6 +33,7 @@ const NavbarComps = () => {
             <div className={styles.content}>
               <Nav className="mr-auto">
                 <Nav.Link href="#courses">Courses</Nav.Link>
+                <Nav.Link href="#training">Training</Nav.Link>
                 <Nav.Link href="#mentor">Become a mentor</Nav.Link>
                 <Nav.Link href="#login">Login</Nav.Link>
               </Nav>
