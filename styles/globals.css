@@ -109,6 +109,7 @@ a {
   transform: translate(-50%, -50%);
   box-shadow: 1px 1px 10px #ffffff;
   transition: 0.5s;
+
 }
 .category-overlay-content{
   position: absolute;
