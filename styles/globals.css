@@ -45,7 +45,7 @@ h2 {
   z-index: -1;
 }
 
-
+/* === Card === */
 .card:hover #overlay {
   opacity: 0;
   transform: translateX(200%);
