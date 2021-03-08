@@ -93,6 +93,7 @@ h2 {
   color: #ffffff;
   transform: translate(-50%,-50%);
   text-align: center;
+
 }
 .category-overlay-content h5{
   letter-spacing: 2px;
@@ -102,7 +103,6 @@ h2 {
   height: 100%;
   transition: 0.5s;
 }
-
 
 @media (min-width: 1280px) {
   .container {
