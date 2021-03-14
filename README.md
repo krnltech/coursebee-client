@@ -14,5 +14,5 @@ A lightweight eLearning Application built using `Node` and `React`.
 2. Clone this repository by running `git clone https://github.com/krnltech/coursebee-client.git`
 3. Run `yarn` to install dependencies.
 4. Run `yarn dev` to run the app in development mode.
-5. Open `http://localhost:3000/` to view the frontend.
+5. Open `http://localhost:8000/` to view the frontend.
 
