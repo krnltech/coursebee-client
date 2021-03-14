@@ -1,65 +1,67 @@
 import Image from 'next/image';
+import classNames from "classnames";
+import styles from "./Footer.module.css";
 const Footer = () => {
   return (  
-    
-      <div className="container-fluid" style={{backgroundColor:"#d2dee4",paddingTop:"60px"}}>
+
+     
+      <div className={styles.footerbody+" container-fluid"}>
         <div className="row">
-          
-          <div className="col-l-3" style={{width:"440px"}}>
-          <ul style={{listStyleType:"none"}}>
-              <li>  <div style={{display:"flex",justifyContent:"space-between",width:"80px",marginBottom:"18px"}}>  
-                      <div style={{borderLeft:"3px solid green"}}></div> 
+          <div className={styles.footercolumn+" col-l-3"}>
+          <ul>
+              <li>  <div className={styles.footercolumn_ul_1}>  
+                      <div className={styles.footercolumn_ul_1_border}></div> 
                       <div>Navigate</div>
                    </div>
               </li>
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}> <a href="#" style={{paddingTop:"14px"}}>All Courses</a></li>
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}> <a href="#" style={{paddingTop:"2px"}}>Blog</a></li>    
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}><a href="#" style={{paddingTop:"2px"}}>Verify A Certificate</a></li>     
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}><a href="#" style={{paddingTop:"2px"}}>Documentation</a></li>
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}><a href="#" style={{paddingTop:"2px"}}>FAQs</a></li>
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}><a href="#" style={{paddingTop:"2px"}}>Support | Contact Us </a></li>
+              <li className={styles.footercolumn_ul_1_li}> <a href="#" className={styles.footercolumn_ul_1_li_a_1}>All Courses</a></li>
+              <li className={styles.footercolumn_ul_1_li}> <a href="#">Blog</a></li>    
+              <li className={styles.footercolumn_ul_1_li}> <a href="#">Verify A Certificate</a></li>     
+              <li className={styles.footercolumn_ul_1_li}> <a href="#">Documentation</a></li>
+              <li className={styles.footercolumn_ul_1_li}> <a href="#">FAQs</a></li>
+              <li className={styles.footercolumn_ul_1_li}> <a href="#">Support | Contact Us </a></li>
             </ul>
           </div>
-          <div className="col-l-3" style={{width:"440px"}}>
-          <ul style={{listStyleType:"none"}}>
-               <li> <div style={{display:"flex",justifyContent:"space-between",width:"117px",marginBottom:"18px"}}>  
-                      <div style={{borderLeft:"3px solid green"}}></div> 
+          <div className={styles.footercolumn+" col-l-3"}>
+          <ul >
+               <li> <div className={styles.footercolumn_ul_2}>  
+                      <div className={styles.footercolumn_ul_1_border}></div> 
                       <div>Work With Us</div>
                    </div>
               </li>
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}> <a href="#" style={{paddingTop:"2px"}}>About Bohubrihi</a></li>
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}><a href="#">Our Team | Join</a></li>    
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}><a href="#">Become an Instructor</a></li>     
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}><a href="#">Affiliates</a></li>
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}><a href="#">Request A New Course</a></li>
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}><a href="#">Write for Bohubrihi Blog</a></li>
+              <li className={styles.footercolumn_ul_1_li}> <a href="#" style={{paddingTop:"2px"}}>About Kernel</a></li>
+              <li className={styles.footercolumn_ul_1_li}><a href="#">Our Team | Join</a></li>    
+              <li className={styles.footercolumn_ul_1_li}><a href="#">Become an Instructor</a></li>     
+              <li className={styles.footercolumn_ul_1_li}><a href="#">Affiliates</a></li>
+              <li className={styles.footercolumn_ul_1_li}><a href="#">Request A New Course</a></li>
+              <li className={styles.footercolumn_ul_1_li}><a href="#">Write for Kernel Blog</a></li>
             </ul>
           </div>
-          <div className="col-l-3" style={{width:"440px"}}>
-            <ul style={{listStyleType:"none"}}>
-               <li>  <div style={{display:"flex",justifyContent:"space-between",width:"236px",marginBottom:"18px"}}>  
-                      <div style={{borderLeft:"3px solid green"}}></div> 
+          <div className={styles.footercolumn+" col-l-3"}>
+            <ul >
+               <li>  <div className={styles.footercolumn_ul_3}>  
+                      <div className={styles.footercolumn_ul_1_border}></div> 
                       <div>About Kernel Technologies Ltd</div>
                    </div>
               </li>
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}><p>Bohubrihi is Bangladesh’s leading educational platform for superior online courses, professional training and corporate eLearning services that help you develop useful skills and accomplish more in life. Our online courses and career-track programs are designed in collaboration with the best of industry experts and organizations in Bangladesh.</p></li>
+              <li className={styles.footercolumn_ul_1_li}><p>Kernel is Bangladesh’s leading educational platform for superior online courses, professional training and corporate eLearning services that help you develop useful skills and accomplish more in life. Our online courses and career-track programs are designed in collaboration with the best of industry experts and organizations in Bangladesh.</p></li>
              
-              <li>  <div style={{display:"flex",justifyContent:"space-between",width:"90px",marginBottom:"18px"}}>  
-                      <div style={{borderLeft:"3px solid green"}}></div> 
+              <li>  <div className={styles.footercolumn_ul_3_li_bottom}>  
+                      <div className={styles.footercolumn_ul_1_border}></div> 
                       <div>Follow Us</div>
                    </div>
               </li>
             </ul>
           </div>
-          <div className="col-l-3" style={{width:"370px"}}>
-          <ul style={{listStyleType:"none"}}>
-              <li>  <div style={{display:"flex",justifyContent:"space-between",width:"162px",marginBottom:"18px"}}>  
-                      <div style={{borderLeft:"3px solid green"}}></div> 
+          <div className={styles.footercolumn+" col-l-3"}>
+          <ul >
+              <li>  <div className={styles.footercolumn_ul_4}>  
+                      <div className={styles.footercolumn_ul_1_border}></div> 
                       <div>Subscribe For Offers</div>
                    </div>
               </li>
               
-              <li style={{borderTop:"1px solid #b5b7ba",paddingTop:"8px",paddingBottom:"8px"}}> <div>Email Address *</div></li>
+              <li className={styles.footercolumn_ul_1_li}> <div>Email Address *</div></li>
               <li>
                 <div class="input-group mb-3">
                   <input type="text" class="form-control" placeholder="Email Address"/>
