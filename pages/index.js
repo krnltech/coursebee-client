@@ -8,6 +8,7 @@ import HeadComps from "../components/Head";
 import SummaryCard from "../components/summary-card/SummaryCard";
 import SuccessCard from "../components/success-stories/SuccessCard";
 import Heading from "../components/heading/Heading";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -185,6 +186,7 @@ export default function Home() {
       <section className={styles.layer}>
         <SuccessCard />
       </section>
+     
     </>
   );
 }
