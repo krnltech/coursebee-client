@@ -173,7 +173,7 @@ export default function Home() {
 
       {/* Inner Banner  */}
       <section className={styles.layer}>
-        <div className={classNames("container fluid", styles.innerBanner)}>
+        <div className={classNames("container-fluid", styles.innerBanner)}>
           <h2>আপনার অনলাইন শেখার অভিজ্ঞতাটি সর্বাধিক করুন</h2>
           <p>
           আমাদের অনলাইন লার্নিং রিসোর্স সেন্টারে টিপস, কৌশল এবং অনুপ্রেরণামূলক গল্প  রয়েছে আপনাকে শেখানোর  জন্য
