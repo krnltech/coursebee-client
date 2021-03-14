@@ -20,7 +20,7 @@ export default function Home() {
       {/* Best selling course */}
       <section className={styles.layer}>
         <div className="container">
-          <Heading headerText="Best Selling Courses"/>
+          <Heading headerText="সেরা বিক্রয়কৃত কোর্স"/>
           <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
 
             <Tab eventKey="home" title="Web Development">
@@ -46,7 +46,7 @@ export default function Home() {
       {/* Top rated course */}
       <section className={styles.layer}>
         <div className="container">
-          <Heading headerText="Top Rated Courses"/>
+          <Heading headerText="শীর্ষ রেটযুক্ত কোর্স"/>
           <div className="">
             <SliderComponent />
           </div>
@@ -55,9 +55,9 @@ export default function Home() {
 
       {/* Motivation  */}
       <section className={styles.layer}>
-        <Heading headerText="Don't waste your valuable time or money"/>
+        <Heading headerText="আপনার মূল্যবান সময় বা অর্থ অপচয় করবেন না"/>
         <p className={styles.secondTitle}>
-          Only Coursebee has all the critical factors to deliver real results
+        শুধুমাত্র কোর্সবিতে বাস্তব ফলাফল দেওয়ার জন্য সমস্ত প্রয়োজনীয় রিসোর্সসমূহ রয়েছে
         </p>
         <SummaryCard />
       </section>
@@ -66,7 +66,7 @@ export default function Home() {
       <section className={styles.layer}>
         <div className="container">
           <h2 className={styles.sectionTitle}></h2>
-          <Heading headerText="Top Categories"/>
+          <Heading headerText="টপ ক্যাটাগরি"/>
           <div className="row mt-2">
             <div className="col-md-3">
               <div className="category-box">
@@ -173,12 +173,11 @@ export default function Home() {
       {/* Inner Banner  */}
       <section className={styles.layer}>
         <div className={classNames("container fluid", styles.innerBanner)}>
-          <h2>Make the most of your online learning experience</h2>
+          <h2>আপনার অনলাইন শেখার অভিজ্ঞতাটি সর্বাধিক করুন</h2>
           <p>
-            Our Online Learning Resource Center has tips, tricks and inspiring
-            stories to help you learn while staying home.
+          আমাদের অনলাইন লার্নিং রিসোর্স সেন্টারে টিপস, কৌশল এবং অনুপ্রেরণামূলক গল্প  রয়েছে আপনাকে শেখানোর  জন্য
           </p>
-          <Button variant="outline-info">View All Courses</Button>
+          <Button variant="outline-info">সমস্ত কোর্স দেখুন</Button>
         </div>
       </section>
 
