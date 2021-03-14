@@ -33,3 +33,39 @@
   background-size: cover;
   width: 100%;  
 }
+
+/* SeachBar */
+.wrapper {
+  text-align: center;
+  position: relative;
+  height: 60px;
+  font-size: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper input {
+  box-sizing: border-box;
+  font-size: 18px;
+  vertical-align: top;
+}
+.search {
+  padding: 0 30px;
+  font-size: 35px;
+  width: 60%;
+  max-width: 400px;
+  height: 60px;
+  border: 1px solid #b3b3b3;
+  border-radius: 20px 0 0 20px;
+}
+.submit {
+  cursor: pointer;
+  border: none;
+  background: url("http://thesuiteworld.com/wp-admin/maint/search-icon-white-png-540.png") no-repeat center center, #383535;
+  background-size: 35px 35px;
+  border-radius: 0 20px 20px 0;
+  padding: 15px 25px;
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  color: aliceblue;
+}
