@@ -6,7 +6,7 @@ const SuccessCard = () => {
   const cardStyle = { 
     width: "20.75rem", 
     height: "25rem", 
-    borderRadius: "15px", 
+    borderRadius: "8px", 
     borderTop: "3px solid red",
   };
 
@@ -41,11 +41,12 @@ const SuccessCard = () => {
                 <div className={styles.successcardimage}> </div>
                 <Card.Title className="mt-4"> {s.name} </Card.Title>
                 <Card.Text>
-                  <p>{s.body}</p>                                
+                  <p text-muted>{s.body}</p>                                
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+              <Card.Footer className="d-flex justify-content-center flex-column">
+                <text className="text-muted">NOW AT</text>
+                <text className="text-muted">Raytheon | Data Scientist</text>
               </Card.Footer>
             </Card>
           ))}
