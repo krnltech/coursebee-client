@@ -1,7 +1,9 @@
+/* Upper main banner  */
 .courseBanner {
   background-color: #2e3d49;
   padding: 100px;
-  text-align: center;
+  text-align: left;
+  color: aliceblue;
 }
 .courseBanner h2 {
   color: aliceblue;
@@ -10,4 +12,16 @@
   color: aliceblue;
   font-size: 18px;
   margin-bottom: 20px;
+}
+
+/* Rating Style  */
+.ratingIcon {
+  color: #ede11a !important;
+  font-size: 15px;
+}
+.rating {
+  display: block;
+}
+.ratingNumber {
+  font-weight: 800;
 }
