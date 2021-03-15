@@ -1,6 +1,6 @@
 import { Card, CardDeck } from "react-bootstrap";
 import { useState } from "react";
-
+import styles from "./successcard.module.css";
 const SuccessCard = () => {
   const cardStyle = { 
     width: "20.75rem", 
@@ -37,7 +37,8 @@ const SuccessCard = () => {
           {success.map((s) => (
             <Card style={cardStyle} key={s.id}>                         
               <Card.Body>
-                <Card.Title> {s.name} </Card.Title>
+                <div className={styles.successcardimage}> </div>
+                <Card.Title className="mt-4"> {s.name} </Card.Title>
                 <Card.Text>
                   <p>{s.body}</p>                                
                 </Card.Text>
