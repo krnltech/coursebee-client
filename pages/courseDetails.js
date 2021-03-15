@@ -3,6 +3,7 @@ import classNames from "classnames";
 
 import HeadComps from "../components/Head";
 import CourseBanner from "../components/course-banner/CourseBanner";
+import CourseSummary from "../components/course-summary/CourseSummary";
 
 const CourseDetails = () => {
   return (
@@ -29,7 +30,8 @@ const CourseDetails = () => {
 
       <section className={classNames(styles.layer, "container")}>
         <div className="row">
-          <div className="col-md-8" style={{ border: "1px solid red", padding: "5px" }}>
+          <div className="col-md-8">
+            <CourseSummary />
           </div>
           <div className="col-md-4" style={{ border: "1px solid red", padding: "5px" }}>
           </div>
