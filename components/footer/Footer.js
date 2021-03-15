@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {useState} from 'react';
 import classNames from "classnames";
 import styles from "./Footer.module.css";
 import {FaFacebook} from "react-icons/fa";
@@ -6,6 +7,12 @@ import {FaInstagram} from "react-icons/fa";
 import {FaLinkedin} from "react-icons/fa";
 import {FaYoutube} from "react-icons/fa";
 const Footer = () => {
+   
+   const [fbcolor,setfbcolor] = useState("");
+   const [instcolor,setinstcolor] = useState("");
+   const [lincolor,setlincolor] = useState("");
+   const [youcolor,setyoucolor] = useState("");
+
   return (
     <div className={styles.footerbody + " container-fluid"}>
       <div className="row">
@@ -105,17 +112,41 @@ const Footer = () => {
                 <div>Follow Us</div>
               </div>
               <div className={styles.footercolumn_icon_group}> 
-                <div className={styles.footercolumn_icon}>
-                  <FaFacebook style={{margin:"auto"}} />
+                <div className={styles.footercolumn_div_icon} 
+                  onMouseEnter={()=>{
+                    setfbcolor("blue");
+                  }} 
+                  onMouseLeave={()=>{
+                    setfbcolor("")
+                 }}
+                >
+                  <FaFacebook style={{margin:"auto",color:fbcolor}}/>
                 </div>
-                <div className={styles.footercolumn_icon}>
-                  <FaInstagram style={{margin:"auto"}} />
+                <div className={styles.footercolumn_div_icon}
+                  onMouseEnter={()=>{
+                    setinstcolor("blue");
+                  }} 
+                  onMouseLeave={()=>{
+                    setinstcolor("")
+                  }}>
+                  <FaInstagram style={{margin:"auto",color:instcolor}} />
                 </div>
-                <div className={styles.footercolumn_icon}>
-                  <FaLinkedin style={{margin:"auto"}} />
+                <div className={styles.footercolumn_div_icon}  
+                  onMouseEnter={()=>{
+                    setlincolor("blue");
+                  }} 
+                  onMouseLeave={()=>{
+                    setlincolor("")
+                  }}>
+                  <FaLinkedin style={{margin:"auto",color:lincolor}} />
                 </div>
-                <div className={styles.footercolumn_icon}>
-                  <FaYoutube style={{margin:"auto"}} />
+                <div className={styles.footercolumn_div_icon}  onMouseEnter={()=>{
+                    setyoucolor("blue");
+                  }} 
+                   onMouseLeave={()=>{
+                    setyoucolor("")
+                  }}>
+                  <FaYoutube style={{margin:"auto",color:youcolor}} />
                 </div>
               </div>
             </li>
