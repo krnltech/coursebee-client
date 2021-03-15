@@ -11,7 +11,7 @@ const SuccessCard = () => {
   const [success, setSuccess] = useState([
     {
       name: "Zahid Hossain",
-      body: "Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.",
+      body: "The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners. It helped me achieve my career transition goal.",
       profession: "",
       id: 1,
     },
@@ -37,9 +37,9 @@ const SuccessCard = () => {
             <Card style={cardStyle} key={s.id} className="shadow bg-white">                         
               <Card.Body>
                 <div className={styles.successcardimage}> </div>
-                <Card.Title className="mt-4"> {s.name} </Card.Title>
+                <Card.Title className="mt-4 text-muted" style={{fontSize:"1.8em"}}> {s.name} </Card.Title>
                 <Card.Text>
-                  <p text-muted>{s.body}</p>                                
+                  <p className="text-muted" style={{fontStyle:"italic",fontSize:"1.2em"}}>{s.body}</p>                                
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="d-flex justify-content-center flex-column">
