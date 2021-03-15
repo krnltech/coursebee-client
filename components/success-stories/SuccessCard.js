@@ -1,6 +1,7 @@
-import { Card, CardDeck } from "react-bootstrap";
+import { Card, CardDeck,Button } from "react-bootstrap";
 import { useState } from "react";
 import styles from "./successcard.module.css";
+
 const SuccessCard = () => {
   const cardStyle = { 
     width: "20.75rem", 
@@ -48,7 +49,10 @@ const SuccessCard = () => {
               </Card.Footer>
             </Card>
           ))}
-        </CardDeck>      
+        </CardDeck>   
+        <div className={styles.successcardbutton}> 
+          <Button variant="primary" className="mt-4">MORE SUCCESS STORIES</Button>    
+        </div> 
       </div>
     </>
   );

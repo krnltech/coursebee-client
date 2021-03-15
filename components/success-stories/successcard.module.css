@@ -7,3 +7,9 @@
     margin-right: auto;
     background: url(https://picsum.photos/50/50);
 }
+
+.successcardbutton {
+    display: flex;
+    justify-content: center;
+
+}
