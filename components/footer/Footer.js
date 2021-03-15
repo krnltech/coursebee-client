@@ -1,6 +1,10 @@
 import Image from "next/image";
 import classNames from "classnames";
 import styles from "./Footer.module.css";
+import {FaFacebook} from "react-icons/fa";
+import {FaInstagram} from "react-icons/fa";
+import {FaLinkedin} from "react-icons/fa";
+import {FaYoutube} from "react-icons/fa";
 const Footer = () => {
   return (
     <div className={styles.footerbody + " container-fluid"}>
@@ -99,6 +103,20 @@ const Footer = () => {
               <div className={styles.footercolumn_ul_3_li_bottom}>
                 <div className={styles.footercolumn_ul_1_border}></div>
                 <div>Follow Us</div>
+              </div>
+              <div className={styles.footercolumn_icon_group}> 
+                <div className={styles.footercolumn_icon}>
+                  <FaFacebook style={{margin:"auto"}} />
+                </div>
+                <div className={styles.footercolumn_icon}>
+                  <FaInstagram style={{margin:"auto"}} />
+                </div>
+                <div className={styles.footercolumn_icon}>
+                  <FaLinkedin style={{margin:"auto"}} />
+                </div>
+                <div className={styles.footercolumn_icon}>
+                  <FaYoutube style={{margin:"auto"}} />
+                </div>
               </div>
             </li>
           </ul>
