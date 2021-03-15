@@ -1,3 +1,8 @@
 .content{
-  margin-left: auto;
+}
+.navCenterElement{
+  width: 60%;
+}
+.searchInput{
+  width: 100% !important;
 }

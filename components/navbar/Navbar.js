@@ -1,10 +1,11 @@
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, Nav, Form, FormControl, Button, Dropdown } from "react-bootstrap";
 import { BsFillGrid3X3GapFill } from 'react-icons/bs';
 
 import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./Navbar.module.css";
+import classNames from "classnames";
 
 const NavbarComps = () => {
   return (
@@ -23,18 +24,29 @@ const NavbarComps = () => {
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav>
-              <BsFillGrid3X3GapFill />
-              <Nav.Link href="#catagories">ক্যাটাগরি</Nav.Link>
-            </Nav>
-            <Form inline>
-              <FormControl
-                type="text"
-                placeholder="Search"
-                className="mr-sm-2"
-              />
-              <Button variant="outline-success">Search</Button>              
-            </Form>
+
+            <div className={classNames("row mr-auto ml-auto", styles.navCenterElement)}>
+              <Dropdown className="col-md-2">
+                <Dropdown.Toggle variant="" id="dropdown-basic">
+                  Category
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+
+              <Form inline  className="col-md-8">
+                <FormControl
+                    type="text"
+                    placeholder="Search"
+                    className={styles.searchInput}
+                />
+              </Form>
+              <Button variant="outline-success" className="col-md-2">Search</Button>
+            </div>
 
             <div className={styles.content}>
               <Nav className="mr-auto">
