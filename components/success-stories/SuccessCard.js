@@ -35,7 +35,7 @@ const SuccessCard = () => {
       <div className="container">
         <CardDeck style={{ textAlign: 'center' }}>
           {success.map((s) => (
-            <Card style={cardStyle} key={s.id}>                         
+            <Card style={cardStyle} key={s.id} className="shadow bg-white">                         
               <Card.Body>
                 <div className={styles.successcardimage}> </div>
                 <Card.Title className="mt-4"> {s.name} </Card.Title>
