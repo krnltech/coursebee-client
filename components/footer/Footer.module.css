@@ -11,6 +11,10 @@
     list-style-type: none
 }
 
+.footercolumn ul li a{
+    color: black;
+}
+
 .footercolumn_ul_1{
     display:flex;
     justify-content:space-between;

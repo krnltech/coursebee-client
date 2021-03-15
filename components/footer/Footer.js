@@ -141,7 +141,7 @@ const Footer = () => {
                   <FaLinkedin style={{margin:"auto",color:lincolor}} />
                 </div>
                 <div className={styles.footercolumn_div_icon}  onMouseEnter={()=>{
-                    setyoucolor("blue");
+                    setyoucolor("red");
                   }} 
                    onMouseLeave={()=>{
                     setyoucolor("")

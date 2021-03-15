@@ -3,9 +3,7 @@ import { useState } from "react";
 import styles from "./successcard.module.css";
 
 const SuccessCard = () => {
-  const cardStyle = { 
-    width: "20.75rem", 
-    height: "25rem", 
+  const cardStyle = {  
     borderRadius: "8px", 
     borderTop: "3px solid red",
   };
