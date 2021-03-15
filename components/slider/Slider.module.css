@@ -1,6 +1,13 @@
+/* Rating Style  */
 .ratingIcon {
   color: #ede11a !important;
   font-size: 15px;
+}
+.rating {
+  display: block;
+}
+.ratingNumber {
+  font-weight: 800;
 }
 
 .sliderCard {
@@ -8,25 +15,19 @@
   overflow: hidden;
   margin: 0 5px;
 }
-.cardTitle{
+.cardTitle {
   font-size: 16px !important;
   height: 40px;
 }
 
-
-.lectures span{
+.lectures span {
   font-size: 14px;
 }
-.rating{
-  display: block;
-}
-.ratingNumber{
-  font-weight: 800;
-}
+
 .language {
   display: block;
 }
-.difficulty{
+.difficulty {
   display: block;
   text-align: right;
   font-size: 15px;
@@ -36,16 +37,16 @@
   color: #797979;
 }
 
-.cardImage{
+.cardImage {
   height: 50%;
   position: relative;
   overflow: hidden;
   box-shadow: 1px 5px 5px #afaaaa;
 }
-.cardImage img{
+.cardImage img {
   height: 100%;
 }
-.overlayContent{
+.overlayContent {
   width: 100%;
   color: #ddd;
   text-align: center;
@@ -55,15 +56,14 @@
   transform: translate(-50%, -50%);
 }
 
-
-.cartButton{
+.cartButton {
   padding: 5px 20px;
   background: #1fe3ef;
   color: #ffffff;
-  font-weight: 700;  
+  font-weight: 700;
   border-radius: 5px;
   border: 1px solid #cccccc;
 }
-.cartButton:hover{
+.cartButton:hover {
   text-decoration: none;
 }

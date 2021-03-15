@@ -125,14 +125,14 @@ const SliderComponent = ({ source }) => {
                       <ImBooks className="mr-2" />{" "}
                       <span> {course.lectures} </span>
                     </span>
-                    <span className={classNames(styles.rating, "mt-2")}>
-                      {" "}
-                      {renderRating(course.rating)}{" "}
-                      <span className={styles.ratingNumber}>({course.rating})</span>{" "}
+                    
+                    <span className={classNames(styles.rating, "mt-2")}>                      
+                      {renderRating(course.rating)}
+                      <span className={styles.ratingNumber}>({course.rating})</span>
                     </span>
+                    
                     <span className={classNames(styles.language, "mt-2")}>
-                      {" "}
-                      <FaGlobeAmericas className="mr-2" /> <span>বাংলা </span>{" "}
+                      <FaGlobeAmericas className="mr-2" /> <span>বাংলা </span>
                     </span>
                   </div>
                 </div>
