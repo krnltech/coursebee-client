@@ -60,4 +60,3 @@ const CourseSummary = () => {
 };
 
 export default CourseSummary;
-
