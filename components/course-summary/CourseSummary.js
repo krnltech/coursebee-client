@@ -46,7 +46,7 @@ const CourseSummary = () => {
   return (
     <>
       <div className={styles.summary}>
-        <h2 style={{ marginBottom: "20px" }}>What you'll learn</h2>
+        <h2 style={{ marginBottom: "20px" }}>কী কী শিখবেন এই কোর্স থেকে?</h2>
         {courseInfo.map((summary) => (
           <div key={summary.id}>
             <h5>
@@ -60,4 +60,3 @@ const CourseSummary = () => {
 };
 
 export default CourseSummary;
-

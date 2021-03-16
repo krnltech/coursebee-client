@@ -1,0 +1,57 @@
+.highlight{
+  padding: 10px;
+  border: 1px solid rgb(224, 209, 209);
+  background-color: rgb(247, 247, 247);
+  box-shadow: 3px 5px #eceaea;
+}
+.price {
+  border: 1px solid rgb(224, 209, 209);
+  padding: 10px 120px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 3px;
+}
+.button{
+  margin-top: 5px;
+  width: 100%;
+  padding: 15px 0;
+}
+.inclution{
+  margin-top: 20px;
+}
+.iconStyle{
+  margin-right: 20px;
+}
+/* Title Design  */
+
+.title{
+  text-align: center;
+  margin-bottom: 25px;
+}
+.title span {
+  display: inline-block;
+  position: relative; 
+}
+.title span:before {
+  content: "";
+  height: 6px;
+  border-top: 3px solid #dad6d7;
+  width: 5em;
+  margin: 0 1em;
+  position: absolute;
+  bottom: 0.5em;
+}
+.title span:after {
+  content: "";
+  height: 6px;
+  border-top: 3px solid #dad6d7;
+  width: 5em;
+  margin: 0 1em;
+  position: absolute;
+  bottom: 0.5em;
+}
+.title span:before {
+  right: 100%;
+}
+.title span:after {
+  left: 100%;
+}
