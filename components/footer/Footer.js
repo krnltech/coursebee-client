@@ -13,87 +13,87 @@ const Footer = () => {
    const [youcolor,setyoucolor] = useState("");
 
   return (
-    <div className={classNames(styles.footerbody,"container-fluid")}>
+    <div className={classNames(styles.footerBody,"container-fluid")}>
       <div className="row">
-        <div className={styles.footercolumn + " col-md-6 col-lg-3"}>
+        <div className={styles.footerColumn + " col-md-6 col-lg-3"}>
           <ul>
             <li>
               {" "}
-              <div className={styles.footercolumn_ul_1}>
-                <div className={styles.footercolumn_ul_1_border}></div>
+              <div className={styles.footerColumnUl1}>
+                <div className={styles.footerColumnUl1Border}></div>
                 <div>Navigate</div>
               </div>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               {" "}
-              <a href="#" className={styles.footercolumn_ul_1_li_a_1}>
+              <a href="#" className={styles.footerColumnUl1LiA1}>
                 All Courses
               </a>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               {" "}
               <a href="#">Blog</a>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               {" "}
               <a href="#">Verify A Certificate</a>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               {" "}
               <a href="#">Documentation</a>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               {" "}
               <a href="#">FAQs</a>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               {" "}
               <a href="#">Support | Contact Us </a>
             </li>
           </ul>
         </div>
-        <div className={styles.footercolumn + " col-md-6 col-lg-3"}>
+        <div className={styles.footerColumn + " col-md-6 col-lg-3"}>
           <ul>
             <li>
               {" "}
-              <div className={styles.footercolumn_ul_2}>
-                <div className={styles.footercolumn_ul_1_border}></div>
+              <div className={styles.footerColumnUl2}>
+                <div className={styles.footerColumnUl1Border}></div>
                 <div>Work With Us</div>
               </div>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               {" "}
               <a href="#" style={{ paddingTop: "2px" }}>
                 About Kernel
               </a>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               <a href="#">Our Team | Join</a>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               <a href="#">Become an Instructor</a>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               <a href="#">Affiliates</a>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               <a href="#">Request A New Course</a>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               <a href="#">Write for Kernel Blog</a>
             </li>
           </ul>
         </div>
-        <div className={styles.footercolumn + " col-md-6 col-lg-3"}>
+        <div className={styles.footerColumn + " col-md-6 col-lg-3"}>
           <ul>
             <li>
               {" "}
-              <div className={styles.footercolumn_ul_3}>
-                <div className={styles.footercolumn_ul_1_border}></div>
+              <div className={styles.footerColumnUl3}>
+                <div className={styles.footerColumnUl1Border}></div>
                 <div>About Kernel Technologies Ltd</div>
               </div>
             </li>
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               <p>
                 Kernel is Bangladesh’s leading educational platform for superior
                 online courses, professional training and corporate eLearning
@@ -106,12 +106,12 @@ const Footer = () => {
 
             <li>
               {" "}
-              <div className={styles.footercolumn_ul_3_li_bottom}>
-                <div className={styles.footercolumn_ul_1_border}></div>
+              <div className={styles.footerColumnUl3LiBottom}>
+                <div className={styles.footerColumnUl1Border}></div>
                 <div>Follow Us</div>
               </div>
-              <div className={styles.footercolumn_icon_group}> 
-                <div className={styles.footercolumn_div_icon} 
+              <div className={styles.footerColumnIconGroup}> 
+                <div className={styles.footerColumnDivIcon} 
                   onMouseEnter={()=>{
                     setfbcolor("blue");
                   }} 
@@ -121,7 +121,7 @@ const Footer = () => {
                 >
                   <FaFacebook style={{margin:"auto",color:fbcolor}}/>
                 </div>
-                <div className={styles.footercolumn_div_icon}
+                <div className={styles.footerColumnDivIcon}
                   onMouseEnter={()=>{
                     setinstcolor("blue");
                   }} 
@@ -130,7 +130,7 @@ const Footer = () => {
                   }}>
                   <FaInstagram style={{margin:"auto",color:instcolor}} />
                 </div>
-                <div className={styles.footercolumn_div_icon}  
+                <div className={styles.footerColumnDivIcon}  
                   onMouseEnter={()=>{
                     setlincolor("blue");
                   }} 
@@ -139,7 +139,7 @@ const Footer = () => {
                   }}>
                   <FaLinkedin style={{margin:"auto",color:lincolor}} />
                 </div>
-                <div className={styles.footercolumn_div_icon}  onMouseEnter={()=>{
+                <div className={styles.footerColumnDivIcon}  onMouseEnter={()=>{
                     setyoucolor("red");
                   }} 
                    onMouseLeave={()=>{
@@ -151,17 +151,17 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={classNames(styles.footercolumn,"col-md-6 col-lg-3")}>
+        <div className={classNames(styles.footerColumn,"col-md-6 col-lg-3")}>
           <ul>
             <li>
               {" "}
-              <div className={styles.footercolumn_ul_4}>
-                <div className={styles.footercolumn_ul_1_border}></div>
+              <div className={styles.footerColumnUl4}>
+                <div className={styles.footerColumnUl1Border}></div>
                 <div>Subscribe For Offers</div>
               </div>
             </li>
 
-            <li className={styles.footercolumn_ul_1_li}>
+            <li className={styles.footerColumnUl1Li}>
               {" "}
               <div>Email Address *</div>
             </li>
