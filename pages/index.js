@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Motivation  */}
+      {/* Motivation */}
       <section className={styles.layer}>
         <Heading headerText="আপনার মূল্যবান সময় বা অর্থ অপচয় করবেন না"/>
         <p className={styles.secondTitle}>
@@ -170,7 +170,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Inner Banner  */}
+      {/* Inner Banner */}
       <section className={styles.layer}>
         <div className={classNames("container-fluid", styles.innerBanner)}>
           <h2>আপনার অনলাইন শেখার অভিজ্ঞতাটি সর্বাধিক করুন</h2>
@@ -181,7 +181,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Success Stories   */}
+      {/* Success Stories */}
       <section className={styles.layer}>
         <SuccessCard />
       </section>
