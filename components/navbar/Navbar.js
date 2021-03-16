@@ -28,13 +28,13 @@ const NavbarComps = () => {
             <div className={classNames("row mr-auto ml-auto", styles.navCenterElement)}>
               <Dropdown className="col-md-2">
                 <Dropdown.Toggle variant="" id="dropdown-basic">
-                  Category
+                  ক্যাটাগরি
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                  <Dropdown.Item href="#/action-1">ওয়েব ডেভেলপমেন্ট</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">গ্রাফিক্স ডিজাইন</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">মার্কেটিং</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
 
@@ -45,14 +45,15 @@ const NavbarComps = () => {
                     className={styles.searchInput}
                 />
               </Form>
-              <Button variant="outline-success" className="col-md-2">Search</Button>
+              <Button variant="outline-success" className="col-md-2">খুঁজুন</Button>
             </div>
 
             <div className={styles.content}>
               <Nav className="mr-auto">
                 <Nav.Link href="#courses">কোর্স</Nav.Link>
                 <Nav.Link href="#training">ট্রেইনিং</Nav.Link>
-                <Nav.Link href="#mentor">মেন্টর হন</Nav.Link>
+                <Nav.Link href="#mentor">মেন্টর রেজিস্ট্রেশন</Nav.Link>
+                <Nav.Link href="#masterclass">মাস্টারক্লাস</Nav.Link>
                 <Nav.Link href="#login">লগইন</Nav.Link>
               </Nav>
             </div>
