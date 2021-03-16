@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {useState} from 'react';
 import classNames from "classnames";
 import styles from "./Footer.module.css";
@@ -14,7 +13,7 @@ const Footer = () => {
    const [youcolor,setyoucolor] = useState("");
 
   return (
-    <div className={styles.footerbody + " container-fluid"}>
+    <div className={classNames(styles.footerbody,"container-fluid")}>
       <div className="row">
         <div className={styles.footercolumn + " col-md-6 col-lg-3"}>
           <ul>
@@ -152,7 +151,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.footercolumn + " col-md-6 col-lg-3"}>
+        <div className={classNames(styles.footercolumn,"col-md-6 col-lg-3")}>
           <ul>
             <li>
               {" "}
