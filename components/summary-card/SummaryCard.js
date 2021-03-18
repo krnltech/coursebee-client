@@ -58,7 +58,7 @@ const SummaryCard = () => {
               <Card.Body>
                 <Card.Title> {card.title} </Card.Title>
                 <Card.Text>
-                  <p>{card.body}</p>
+                  {card.body}
                 </Card.Text>
               </Card.Body>
             </Card>
