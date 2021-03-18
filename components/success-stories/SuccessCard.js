@@ -39,7 +39,7 @@ const SuccessCard = () => {
               <Card.Body>
                 <Card.Title> {s.name} </Card.Title>
                 <Card.Text>
-                  <p>{s.body}</p>                                
+                  {s.body}                              
                 </Card.Text>
               </Card.Body>
               <Card.Footer>

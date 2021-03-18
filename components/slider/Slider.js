@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import Slider from "react-slick";
 import styles from "./Slider.module.css";
 import classNames from "classnames";
@@ -87,7 +87,7 @@ const SliderComponent = ({ source }) => {
       stars.push(<AiFillStar className={styles.ratingIcon} />);
     }
     return stars.map((star, key) => {
-      return <>{star}</>;
+      return <Fragment key={key}>{star}</Fragment>;
     });
   };
 
@@ -118,7 +118,6 @@ const SliderComponent = ({ source }) => {
           <div style={{ padding: "0 6px" }} key={key}>
 
             <Link href="/course-details">
-              <a>
                 <Card className={styles.sliderCard} style={cardStyle} key={course.id}>
                   <div className={styles.cardImage}>
                     <Card.Img src={course.src} />
@@ -158,13 +157,12 @@ const SliderComponent = ({ source }) => {
                         {course.author}
                       </span>
                       <h5 className="mt-2 mb-3"> {course.price} TK.</h5>
-                      <a href="#" className={classNames(styles.cartButton, "mt-2")}>
+                      <button href="#" className={classNames(styles.cartButton, "mt-2")}>
                         Add to Cart
-                      </a>
+                      </button>
                     </Card.Text>
                   </Card.Body>
                 </Card>
-              </a>
             </Link>
 
           </div>
