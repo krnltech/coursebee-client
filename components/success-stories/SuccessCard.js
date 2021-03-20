@@ -1,18 +1,17 @@
-import { Card, CardDeck } from "react-bootstrap";
+import { Card, CardDeck,Button } from "react-bootstrap";
 import { useState } from "react";
+import styles from "./successcard.module.css";
 
 const SuccessCard = () => {
-  const cardStyle = { 
-    width: "20.75rem", 
-    height: "25rem", 
-    borderRadius: "15px", 
+  const cardStyle = {  
+    borderRadius: "8px", 
     borderTop: "3px solid red",
   };
 
   const [success, setSuccess] = useState([
     {
       name: "Zahid Hossain",
-      body: "Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the high-impact skills that top companies want.",
+      body: "The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners. It helped me achieve my career transition goal.",
       profession: "",
       id: 1,
     },
@@ -35,19 +34,25 @@ const SuccessCard = () => {
       <div className="container">
         <CardDeck style={{ textAlign: 'center' }}>
           {success.map((s) => (
-            <Card style={cardStyle} key={s.id}>                         
+            <Card style={cardStyle} key={s.id} className="shadow bg-white">                         
               <Card.Body>
-                <Card.Title> {s.name} </Card.Title>
+                <div className={styles.successcardimage}> </div>
+                <Card.Title className="mt-4 text-muted" style={{fontSize:"1.8em"}}> {s.name} </Card.Title>
                 <Card.Text>
-                  {s.body}                              
+                  <p className="text-muted" style={{fontStyle:"italic",fontSize:"1.2em"}}>{s.body}</p>                                
+
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+              <Card.Footer className="d-flex justify-content-center flex-column">
+                <text className="text-muted">NOW AT</text>
+                <text className="text-muted">Raytheon | Data Scientist</text>
               </Card.Footer>
             </Card>
           ))}
-        </CardDeck>      
+        </CardDeck>   
+        <div className={styles.successcardbutton}> 
+          <Button variant="primary" className="mt-4">MORE SUCCESS STORIES</Button>    
+        </div> 
       </div>
     </>
   );
