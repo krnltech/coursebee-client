@@ -166,51 +166,51 @@ const Footer = () => {
               <div>Email Address *</div>
             </li>
             <li>
-              <div class="input-group mb-3">
+              <div className="input-group mb-3">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Email Address"
                 />
               </div>
             </li>
             <li> Areas of Interest *</li>
             <li>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" />
-                <label class="form-check-label" htmlFor="flexCheckDefault">
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" />
+                <label className="form-check-label" htmlFor="flexCheckDefault">
                   Technology
                 </label>
               </div>
             </li>
             <li>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" />
-                <label class="form-check-label" htmlFor="flexCheckDefault">
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" />
+                <label className="form-check-label" htmlFor="flexCheckDefault">
                   Business
                 </label>
               </div>
             </li>
             <li>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" />
-                <label class="form-check-label" htmlFor="flexCheckDefault">
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" />
+                <label className="form-check-label" htmlFor="flexCheckDefault">
                   Academics
                 </label>
               </div>
             </li>
             <li>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" />
-                <label class="form-check-label" htmlFor="flexCheckDefault">
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" />
+                <label className="form-check-label" htmlFor="flexCheckDefault">
                   Career & Professional Growth
                 </label>
               </div>
             </li>
             <li>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" />
-                <label class="form-check-label" htmlFor="flexCheckDefault">
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" />
+                <label className="form-check-label" htmlFor="flexCheckDefault">
                   Learning & Development
                 </label>
               </div>

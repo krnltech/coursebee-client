@@ -40,6 +40,7 @@ const SuccessCard = () => {
                 <Card.Title className="mt-4 text-muted" style={{fontSize:"1.8em"}}> {s.name} </Card.Title>
                 <Card.Text>
                   <p className="text-muted" style={{fontStyle:"italic",fontSize:"1.2em"}}>{s.body}</p>                                
+
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="d-flex justify-content-center flex-column">

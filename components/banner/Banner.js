@@ -12,9 +12,9 @@ const Banner = ({ source }) => {
       >
       
         <div className={styles.bannerTitle}>
-          <div class={styles.wrapper}>
-            <input class={styles.search} type="text" id="search" />
-            <input class={styles.submit} type="submit" value="সার্চ করুন"/>
+          <div className={styles.wrapper}>
+            <input className={styles.search} type="text" id="search" />
+            <input className={styles.submit} type="submit" value="সার্চ করুন"/>
           </div>
           <h4 className="mb-4 pl-5">
             আপনার প্রয়োজনীয় প্রোগ্রামটি খুঁজতে আমাদের কোর্সগুলো ঘুরে দেখুন 

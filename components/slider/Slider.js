@@ -1,8 +1,9 @@
 import { Card } from "react-bootstrap";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import Slider from "react-slick";
 import styles from "./Slider.module.css";
 import classNames from "classnames";
+import Link from 'next/link';
 
 import { AiFillStar } from "react-icons/ai";
 import { GoGraph } from "react-icons/go";
@@ -86,7 +87,7 @@ const SliderComponent = ({ source }) => {
       stars.push(<AiFillStar className={styles.ratingIcon} />);
     }
     return stars.map((star, key) => {
-      return <>{star}</>;
+      return <Fragment key={key}>{star}</Fragment>;
     });
   };
 
@@ -115,52 +116,55 @@ const SliderComponent = ({ source }) => {
         {courses.map((course, key) => (
             
           <div style={{ padding: "0 6px" }} key={key}>
-            <Card className={styles.sliderCard} style={cardStyle} key={course.id}>
-              <div className={styles.cardImage}>
-                <Card.Img src={course.src} />
-                <div id="overlay">
-                  <div className={styles.overlayContent}>
-                    <span className={styles.lectures}>
-                      {" "}
-                      <ImBooks className="mr-2" />{" "}
-                      <span> {course.lectures} </span>
-                    </span>
-                    <span className={classNames(styles.rating, "mt-2")}>
-                      {" "}
-                      {renderRating(course.rating)}{" "}
-                      <span className={styles.ratingNumber}>({course.rating})</span>{" "}
-                    </span>
-                    <span className={classNames(styles.language, "mt-2")}>
-                      {" "}
-                      <FaGlobeAmericas className="mr-2" /> <span>বাংলা </span>{" "}
-                    </span>
+
+            <Link href="/course-details">
+                <Card className={styles.sliderCard} style={cardStyle} key={course.id}>
+                  <div className={styles.cardImage}>
+                    <Card.Img src={course.src} />
+                    <div id="overlay">
+                      <div className={styles.overlayContent}>
+                        <span className={styles.lectures}>
+                          <ImBooks className="mr-2" />
+                          <span> {course.lectures} </span>
+                        </span>
+                        
+                        <span className={classNames(styles.rating, "mt-2")}>                      
+                          {renderRating(course.rating)}
+                          <span className={styles.ratingNumber}>({course.rating})</span>
+                        </span>
+                        
+                        <span className={classNames(styles.language, "mt-2")}>
+                          <FaGlobeAmericas className="mr-2" /> <span>বাংলা </span>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <Card.Body>
-                <span className={styles.difficulty}>
-                  {" "}
-                  <GoGraph style={{ color: "#04cbe0" }} /> {course.difficulty}
-                </span>
-                <Card.Title className={styles.cardTitle}> {course.title} </Card.Title>
-                <Card.Text>
-                  <span className={styles.instructor}>
-                    <FaChalkboardTeacher
-                      style={{
-                        color: "#000000",
-                        fontSize: "15px",
-                        marginRight: "5px",
-                      }}
-                    />
-                    {course.author}
-                  </span>
-                  <h5 className="mt-2 mb-3"> {course.price} TK.</h5>
-                  <a href="#" className={classNames(styles.cartButton, "mt-2")}>
-                    Add to Cart
-                  </a>
-                </Card.Text>
-              </Card.Body>
-            </Card>
+                  <Card.Body>
+                    <span className={styles.difficulty}>
+                      {" "}
+                      <GoGraph style={{ color: "#04cbe0" }} /> {course.difficulty}
+                    </span>
+                    <Card.Title className={styles.cardTitle}> {course.title} </Card.Title>
+                    <Card.Text>
+                      <span className={styles.instructor}>
+                        <FaChalkboardTeacher
+                          style={{
+                            color: "#000000",
+                            fontSize: "15px",
+                            marginRight: "5px",
+                          }}
+                        />
+                        {course.author}
+                      </span>
+                      <h5 className="mt-2 mb-3"> {course.price} TK.</h5>
+                      <button href="#" className={classNames(styles.cartButton, "mt-2")}>
+                        Add to Cart
+                      </button>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+            </Link>
+
           </div>
         ))}
       </Slider>

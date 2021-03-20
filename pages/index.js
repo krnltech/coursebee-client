@@ -1,14 +1,13 @@
 import styles from "../styles/Home.module.css";
 import classNames from "classnames";
-
 import { Tabs, Tab, Button } from "react-bootstrap";
+
 import Banner from "../components/banner/Banner";
 import SliderComponent from "../components/slider/Slider";
 import HeadComps from "../components/Head";
 import SummaryCard from "../components/summary-card/SummaryCard";
 import SuccessCard from "../components/success-stories/SuccessCard";
 import Heading from "../components/heading/Heading";
-import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -54,7 +53,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Motivation  */}
+      {/* Motivation */}
       <section className={styles.layer}>
         <Heading headerText="আপনার মূল্যবান সময় বা অর্থ অপচয় করবেন না"/>
         <p className={styles.secondTitle}>
@@ -171,18 +170,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Inner Banner  */}
+      {/* Inner Banner */}
       <section className={styles.layer}>
         <div className={classNames("container-fluid", styles.innerBanner)}>
           <h2>আপনার অনলাইন শেখার অভিজ্ঞতাটি সর্বাধিক করুন</h2>
           <p>
-          আমাদের অনলাইন লার্নিং রিসোর্স সেন্টারে টিপস, কৌশল এবং অনুপ্রেরণামূলক গল্প  রয়েছে আপনাকে শেখানোর  জন্য
+          আমাদের অনলাইন লার্নিং রিসোর্স সেন্টারে টিপস, কৌশল এবং অনুপ্রেরণামূলক গল্প রয়েছে আপনাকে শেখানোর জন্য
           </p>
           <Button variant="outline-info">সমস্ত কোর্স দেখুন</Button>
         </div>
       </section>
 
-      {/* Success Stories   */}
+      {/* Success Stories */}
       <section className={styles.layer}>
         <SuccessCard />
       </section>
