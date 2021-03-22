@@ -1,2 +1,4 @@
 export const CHANGE_TO_BANGLA = "CHANGE_TO_BANGLA";
 export const CHANGE_TO_ENGLISH = "CHANGE_TO_ENGLISH";
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+export const GET_ERRORS = "GET_ERRORS";
