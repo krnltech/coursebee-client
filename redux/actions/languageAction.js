@@ -10,4 +10,4 @@ export const changeToEnglish = () => (dispatch) => {
     dispatch({
       type: CHANGE_TO_ENGLISH,
     });
-  };
+};
