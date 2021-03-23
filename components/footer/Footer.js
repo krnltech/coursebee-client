@@ -1,68 +1,58 @@
 import {useState} from 'react';
 import classNames from "classnames";
+
 import styles from "./Footer.module.css";
-import {FaFacebook} from "react-icons/fa";
-import {FaInstagram} from "react-icons/fa";
-import {FaLinkedin} from "react-icons/fa";
-import {FaYoutube} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+
 const Footer = () => {
    
-   const [fbcolor,setfbcolor] = useState("");
-   const [instcolor,setinstcolor] = useState("");
-   const [lincolor,setlincolor] = useState("");
-   const [youcolor,setyoucolor] = useState("");
+  const [fbcolor,setfbcolor] = useState("");
+  const [instcolor,setinstcolor] = useState("");
+  const [lincolor,setlincolor] = useState("");
+  const [youcolor,setyoucolor] = useState("");
 
   return (
-    <div className={classNames(styles.footerBody,"container-fluid")}>
+    <div className={classNames(styles.footerBody, "container-fluid")}>
       <div className="row">
-        <div className={styles.footerColumn + " col-md-6 col-lg-3"}>
+        <div className={classNames(styles.footerColumn, "col-md-6 col-lg-3")}>
           <ul>
             <li>
-              {" "}
               <div className={styles.footerColumnUl1}>
                 <div className={styles.footerColumnUl1Border}></div>
                 <div>Navigate</div>
               </div>
             </li>
             <li className={styles.footerColumnUl1Li}>
-              {" "}
               <a href="#" className={styles.footerColumnUl1LiA1}>
                 All Courses
               </a>
             </li>
             <li className={styles.footerColumnUl1Li}>
-              {" "}
               <a href="#">Blog</a>
             </li>
             <li className={styles.footerColumnUl1Li}>
-              {" "}
               <a href="#">Verify A Certificate</a>
             </li>
             <li className={styles.footerColumnUl1Li}>
-              {" "}
               <a href="#">Documentation</a>
             </li>
             <li className={styles.footerColumnUl1Li}>
-              {" "}
               <a href="#">FAQs</a>
             </li>
             <li className={styles.footerColumnUl1Li}>
-              {" "}
               <a href="#">Support | Contact Us </a>
             </li>
           </ul>
         </div>
-        <div className={styles.footerColumn + " col-md-6 col-lg-3"}>
+        <div className={classNames(styles.footerColumn, "col-md-6 col-lg-3")}>
           <ul>
             <li>
-              {" "}
               <div className={styles.footerColumnUl2}>
                 <div className={styles.footerColumnUl1Border}></div>
                 <div>Work With Us</div>
               </div>
             </li>
             <li className={styles.footerColumnUl1Li}>
-              {" "}
               <a href="#" style={{ paddingTop: "2px" }}>
                 About Kernel
               </a>
@@ -84,10 +74,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.footerColumn + " col-md-6 col-lg-3"}>
+        <div className={classNames(styles.footerColumn, "col-md-6 col-lg-3")}>
           <ul>
             <li>
-              {" "}
               <div className={styles.footerColumnUl3}>
                 <div className={styles.footerColumnUl1Border}></div>
                 <div>About Kernel Technologies Ltd</div>
@@ -103,9 +92,7 @@ const Footer = () => {
                 organizations in Bangladesh.
               </p>
             </li>
-
             <li>
-              {" "}
               <div className={styles.footerColumnUl3LiBottom}>
                 <div className={styles.footerColumnUl1Border}></div>
                 <div>Follow Us</div>
@@ -154,15 +141,12 @@ const Footer = () => {
         <div className={classNames(styles.footerColumn,"col-md-6 col-lg-3")}>
           <ul>
             <li>
-              {" "}
               <div className={styles.footerColumnUl4}>
                 <div className={styles.footerColumnUl1Border}></div>
                 <div>Subscribe For Offers</div>
               </div>
             </li>
-
             <li className={styles.footerColumnUl1Li}>
-              {" "}
               <div>Email Address *</div>
             </li>
             <li>
