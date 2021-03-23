@@ -17,6 +17,7 @@ export default function Home() {
         <Banner source="/images/cb-banner.png" />
       </section>
 
+
       {/* Best selling course */}
       <section className={styles.layer}>
         <div className="container">

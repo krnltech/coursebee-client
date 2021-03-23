@@ -5,11 +5,13 @@ import { loginMentor } from "../../redux/actions/authActionMentor";
 import axios from "../../axios/axios";
 import jwt_decode from "jwt-decode";
 import {GET_ERRORS, SET_CURRENT_USER} from "../../redux/types";
+import { useRouter } from 'next/router'
 
 const Login = () => {
     const dispatch = useDispatch();
     const {register, handleSubmit, error} = useForm();
     const { user } = useSelector((state) => state.auth);
+    const router = useRouter()
     console.log("userss",user)
     const onSubmit = async (values) => {
         await axios.post(`/api/mentor/login`,values)
@@ -23,6 +25,7 @@ const Login = () => {
                 localStorage.setItem("jwtToken", token);
                 dispatch(loginMentor(decoded))
                 // history.push("/mentor-dashboard",decoded)
+                router.push("/mentor-dashboard")
                 console.log("login successful")
                 // }
             })
