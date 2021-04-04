@@ -4,7 +4,7 @@ import { useSelector,useDispatch } from "react-redux";
 import { loginMentor } from "../../redux/actions/authActionMentor";
 import axios from "../../axios/axios";
 import jwt_decode from "jwt-decode";
-import {GET_ERRORS, SET_CURRENT_USER} from "../../redux/types";
+import {GET_ERRORS} from "../../redux/types";
 import { useRouter } from 'next/router'
 
 const Login = () => {

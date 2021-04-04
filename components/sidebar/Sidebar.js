@@ -37,6 +37,19 @@ const Sidebar = () => {
                 About
               </a>
             </Link>
+            <Link href="/course-upload">
+              <a
+                  className={classNames(
+                      "list-group-item",
+                      "list-group-item-action",
+                      "bg-dark",
+                      "text-white",
+                      "border-bottom"
+                  )}
+              >
+                Course Upload
+              </a>
+            </Link>
           </div>
         </div>
       </div>
