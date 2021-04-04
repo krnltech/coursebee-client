@@ -1,4 +1,3 @@
-import SideNav from "../components/sidebar/SideNav";
 import Sidebar from "../components/sidebar/Sidebar";
 import Content from "../components/sidebar/Content";
 import CourseUpload from "../components/course-upload/course-upload";
@@ -14,7 +13,6 @@ const MentorDashboard = () => {
         <Sidebar />
 
         <div id="page-content-wrapper ">
-          {/* <SideNav /> */}
           <div className="container-fluid">
             {/*<Content />*/}
             <CourseUpload/>
