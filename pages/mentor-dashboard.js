@@ -13,7 +13,7 @@ const MentorDashboard = () => {
       <div className="d-flex" id="wrapper">
         <Sidebar />
 
-        <div id="page-content-wrapper">
+        <div id="page-content-wrapper ">
           {/* <SideNav /> */}
           <div className="container-fluid">
             {/*<Content />*/}
