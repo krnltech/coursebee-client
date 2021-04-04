@@ -9,6 +9,7 @@ const Sidebar = () => {
 
         <div id="sidebar-wrapper">
           <div className="list-group list-group-flush">
+
             {/* Dashboard */}
             <Link href="#">
               <a
@@ -37,6 +38,7 @@ const Sidebar = () => {
                 About
               </a>
             </Link>
+            
           </div>
         </div>
       </div>
