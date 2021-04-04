@@ -9,9 +9,13 @@
     "export": "next export"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^27.0.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "classnames": "^2.2.6",
+    "html-react-parser": "^1.2.4",
+    "is-empty": "^1.2.0",
     "jwt-decode": "^3.1.2",
     "next": "10.0.7",
     "next-redux-wrapper": "^6.0.2",
