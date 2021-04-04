@@ -1,16 +1,26 @@
+import SideNav from "../components/sidebar/SideNav";
 import Sidebar from "../components/sidebar/Sidebar";
-import { useSelector,useDispatch } from "react-redux";
+import Content from "../components/sidebar/Content";
+import CourseUpload from "../components/course-upload/course-upload";
+import dynamic from "next/dynamic";
+// const CourseUpload = dynamic(() => import("../components/course-upload/course-upload"), {
+//   ssr: false,
+// });
 
 const MentorDashboard = () => {
-    const { user,isAuthenticated } = useSelector((state) => state.auth.user);
-    console.log(user.user.email,isAuthenticated)
   return (
     <>
-      <Sidebar />
-      <h1>Successful</h1>
-        <h5>{user.email}</h5>
-        <h5>{user.type}</h5>
-        <h5>{user.fullname}</h5>
+      <div className="d-flex" id="wrapper">
+        <Sidebar />
+
+        <div id="page-content-wrapper">
+          {/* <SideNav /> */}
+          <div className="container-fluid">
+            {/*<Content />*/}
+            <CourseUpload/>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
