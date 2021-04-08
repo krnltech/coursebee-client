@@ -45,34 +45,64 @@ const CourseUpload = () => {
                         ref={register()}
                     />
                 </Form.Group>
-                <Form.Group >
-                    <Form.Label>Requirements</Form.Label>
-                    <Form.Control
-                        name="requirements"
-                        type="text"
-                        placeholder="Write your Requirements"
-                        ref={register()}
-                    />
-                </Form.Group>
-                <Form.Group >
-                    <Form.Label>Add a section</Form.Label>
-                    <Form.Control
-                        name="section"
-                        type="text"
-                        placeholder="Write a section name"
-                        ref={register()}
-                    />
-                </Form.Group>
-                <Form.Group >
-                    <Form.Label>Add a lecture</Form.Label>
-                    <Form.Control
-                        name="lecture"
-                        type="text"
-                        placeholder="Write a lecture name"
-                        ref={register()}
-                    />
-                </Form.Group>
+                <Form.Label>Write 4 ponts that students will learn from this course</Form.Label>
+                <div className="row">
+                  <div className="col-6">
+                    <Form.Group controlId="formBasicEmail">
+                        <Form.Label>point 1 :</Form.Label>
+                        <Form.Control
+                            name="title"
+                            type="text"
+                            placeholder="Enter your course title"
+                            ref={register()}
+                        />
+                    </Form.Group>
+                  </div>
+                  <div className="col-6">
+                    <Form.Group controlId="formBasicEmail">
+                        <Form.Label>point 2 :</Form.Label>
+                        <Form.Control
+                            name="title"
+                            type="text"
+                            placeholder="Enter your course title"
+                            ref={register()}
+                        />
+                    </Form.Group>
+                  </div>
+                  <div className="col-6">
+                    <Form.Group controlId="formBasicEmail">
+                        <Form.Label>point 3 :</Form.Label>
+                        <Form.Control
+                            name="title"
+                            type="text"
+                            placeholder="Enter your course title"
+                            ref={register()}
+                        />
+                    </Form.Group>
+                  </div>
+                  <div className="col-6">
+                    <Form.Group controlId="formBasicEmail">
+                        <Form.Label>point 4 :</Form.Label>
+                        <Form.Control
+                            name="title"
+                            type="text"
+                            placeholder="Enter your course title"
+                            ref={register()}
+                        />
+                    </Form.Group>
+                  </div>
+                </div>
                 <Form.Group>
+                    <Form.Label>Requirements for this course</Form.Label>
+                    <CKEditor
+                        editor={ ClassicEditor }
+                        onChange={handleShortDescription}
+                        data = {shortDescription}
+                    />
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label>Short Description</Form.Label>
                     <CKEditor
                         editor={ ClassicEditor }
                         onChange={handleShortDescription}
@@ -82,13 +112,12 @@ const CourseUpload = () => {
                 <div style={{background: "#fff4f4"}}>
                     {parse(shortDescription)}
                 </div>
-                <Form.Group >
-                    <Form.Label>Add a lecture2</Form.Label>
-                    <Form.Control
-                        name="lecture"
-                        type="text"
-                        placeholder="Write a lecture name"
-                        ref={register()}
+                <Form.Group>
+                    <Form.Label>Long Description</Form.Label>
+                    <CKEditor
+                        editor={ ClassicEditor }
+                        onChange={handleShortDescription}
+                        data = {shortDescription}
                     />
                 </Form.Group>
 
