@@ -80,7 +80,7 @@ const NavbarComps = () => {
                 <Nav.Link href="#training">ট্রেইনিং</Nav.Link>
                 <Nav.Link href="#mentor">মেন্টর রেজিস্ট্রেশন</Nav.Link>
                 <Nav.Link href="#masterclass">মাস্টারক্লাস</Nav.Link>
-                <Nav.Link href="#login">লগইন</Nav.Link>
+                <Nav.Link href="/mentor-login">লগইন</Nav.Link>
                 <button onClick={toggleLanguage} className="btn btn-primary">
                   {isBangla ? "বাংলা" : "English"}
                 </button>
