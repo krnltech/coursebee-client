@@ -18,7 +18,7 @@ const Sidebar = () => {
         <div id="sidebar-wrapper">
           <div className="list-group list-group-flush">
             {/* Dashboard */}
-            <Link href="#">
+            <Link href="/mentor-dashboard">
               <a
                 className={classNames(
                   "list-group-item",
@@ -32,7 +32,7 @@ const Sidebar = () => {
               </a>
             </Link>
             {/* About  */}
-            <Link href="#">
+            <Link href="/mentor-dashboard/about">
               <a
                 className={classNames(
                   "list-group-item",
@@ -45,7 +45,7 @@ const Sidebar = () => {
                 About
               </a>
             </Link>
-            <Link href="/course-upload">
+            <Link href="/mentor-dashboard/course-upload">
               <a
                 className={classNames(
                   "list-group-item",

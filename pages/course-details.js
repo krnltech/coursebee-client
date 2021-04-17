@@ -28,7 +28,6 @@ const CourseDetails = () => {
           instructorName="Zahid Hossain"
         />
       </section>
-
       
       <section className={classNames(styles.layer, "container")}>
         <div className="row">

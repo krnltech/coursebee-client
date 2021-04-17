@@ -184,8 +184,7 @@ export default function Home() {
       {/* Success Stories */}
       <section className={styles.layer}>
         <SuccessCard />
-      </section>
-     
+      </section>    
     </>
   );
 }
