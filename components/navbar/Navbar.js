@@ -6,15 +6,18 @@ import {
   Button,
   Dropdown,
 } from "react-bootstrap";
-import { BsFillGrid3X3GapFill } from "react-icons/bs";
+// import { BsFillGrid3X3GapFill } from "react-icons/bs";
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import styles from "./Navbar.module.css";
 import classNames from "classnames";
 import { useSelector, useDispatch } from "react-redux";
-import { changeToBangla, changeToEnglish } from "../../redux/actions/languageAction";
+import {
+  changeToBangla,
+  changeToEnglish,
+} from "../../redux/actions/languageAction";
 
 const NavbarComps = () => {
   const dispatch = useDispatch();
@@ -77,10 +80,15 @@ const NavbarComps = () => {
             <div className={styles.content}>
               <Nav className="mr-auto">
                 <Nav.Link href="#courses">কোর্স</Nav.Link>
+
                 <Nav.Link href="#training">ট্রেইনিং</Nav.Link>
-                <Nav.Link href="#mentor">মেন্টর রেজিস্ট্রেশন</Nav.Link>
+
+                <Nav.Link href="/mentor-register">মেন্টর রেজিস্ট্রেশন</Nav.Link>
+
                 <Nav.Link href="#masterclass">মাস্টারক্লাস</Nav.Link>
+
                 <Nav.Link href="/mentor-login">লগইন</Nav.Link>
+
                 <button onClick={toggleLanguage} className="btn btn-primary">
                   {isBangla ? "বাংলা" : "English"}
                 </button>
