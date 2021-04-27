@@ -1,19 +1,10 @@
-import Sidebar from "../../components/sidebar/Sidebar";
-
+import MentorLayout from "../../components/layout/MentorLayout";
 
 const MentorDashboard = () => {
   return (
-    <>
-      <div className="d-flex" id="wrapper">
-        <Sidebar />
-
-        <div id="page-content-wrapper ">
-          <div className="container-fluid">
-            Dashboard
-          </div>
-        </div>
-      </div>
-    </>
+    <MentorLayout>
+        Dashboard
+    </MentorLayout>
   );
 };
 

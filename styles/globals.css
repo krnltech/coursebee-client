@@ -16,6 +16,9 @@ h2 {
   font-family: 'Fira Sans', sans-serif;
 }
 
+#page-content-wrapper{
+  width: 100%
+}
 /* === Slick === */
 .slick-next:before,
 .slick-prev:before {
